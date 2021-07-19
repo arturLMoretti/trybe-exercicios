@@ -14,7 +14,7 @@
 #### [X] 1.4 - Unix & Bash - Parte II 	
  
 ### Bloco 02 - Git, GitHub e Internet :white_check_mark:	
-#### [X] 2.1 - Git & GitHub - O que é e para que serve :ballot_box_with_check:	
+#### [X] 2.1 - Git & GitHub - O que é e para que serve	
 #### [ ] 2.2 - Git & GitHub - Entendendo os comandos
 #### [ ] 2.3 - Internet - Entendendo como ela funciona
 
