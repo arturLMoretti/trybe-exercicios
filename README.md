@@ -8,13 +8,13 @@
 
 ## 01 - Introdução ao Desenvolvimento Web :hourglass_flowing_sand: 
 ### Bloco 01 - Unix e bash :heavy_check_mark:	
-#### 1.1 - Apresentação da Trybe
-#### 1.2 - Apresentação da Trybe
-#### 1.3 - Unix & Bash - Parte I
-#### 1.4 - Unix & Bash - Parte II
-
+#### 1.1 - Apresentação da Trybe :ballot_box_with_check:	
+#### 1.2 - Apresentação da Trybe :ballot_box_with_check:	
+#### 1.3 - Unix & Bash - Parte I :ballot_box_with_check:	
+#### 1.4 - Unix & Bash - Parte II :ballot_box_with_check:	
+ 
 ### Bloco 02 - Git, GitHub e Internet :white_check_mark:	
-#### 2.1 - Git & GitHub - O que é e para que serve 
+#### 2.1 - Git & GitHub - O que é e para que serve :ballot_box_with_check:	
 #### 2.2 - Git & GitHub - Entendendo os comandos
 #### 2.3 - Internet - Entendendo como ela funciona
 
