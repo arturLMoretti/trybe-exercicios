@@ -1,0 +1,8 @@
+1 Linguagem muito popular e adotada pelas principais empresas de tecnologia do mundo.
+2 Sintaxe mais simplificada que a maioria das linguagens.
+3 Constante evolucao, principalmente por ter uma comunidade engajada.
+4 Utilizado no back-end e no front-end.
+5 Muitas opcoes de bibliotecas e frameworks que vao maximizar sua produtividade.
+6 Ainda não sei pois estou começando agora. 
+7 Vários tutoriais disponíveis
+8 O começo é meio complicado, mas exitem tutriais básicos

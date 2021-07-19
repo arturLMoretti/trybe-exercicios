@@ -1,0 +1,5 @@
+1 Pode ser usado no back-end e no front-end.
+3 É mais simples que a maioria das linguagens
+4 Constante evoluÃ§Ã£o, principalmente por ter uma comunidade engajada.
+5 Se adapta com o passar do tempo com contribuições da comunidade
+10 O começo é meio complicado, mas exitem tutriais básicos

@@ -1,0 +1,123 @@
+Parte I - Comandos de Input e Output
+1 - OK 
+
+
+2  - cat > skills2.txt
+	Internet
+	Unix
+	Bash
+	
+3  - cat >> skills2.txt 
+	Java
+	JavaScript
+	ios 
+	Android 
+	Python 
+	
+4  -  wc -l skills2.txt
+
+
+5  - sort < skills2.txt > top_skills.txt
+
+
+6  - cat > phrases2.txt
+	Prefiro morrer do que perder a vida 
+	E volta o cão arrependido 
+	Eu ia lhe chamar enquanto corria a barca 
+
+
+7  - grep br phrases2.txt | wc -l
+  
+8  - grep -v br phrases2.txt | wc -l
+
+
+9  - cat >> phrases2.txt 
+	Alemanha
+	Noruega 
+
+
+10 - cat phrases2.txt countries.txt > bunch_of_things.txt
+
+
+11 - sort < bunch_of_things.txt > bunch_of_things.txt
+
+
+
+Parte II - Permissões 
+
+1  - OK
+
+2 - ls -l
+
+3 - chmod u+rw bunch_of_things.txt && chmod u-x bunch_of_things.txt && chmod g+rw bunch_of_things.txt && chmod gu-x bunch_of_things.txt && chmod a+rw bunch_of_things.txt && chmod a-x bunch_of_things.txt
+
+
+4 - chmod u-w bunch_of_things.txt && chmod g-w bunch_of_things.txt && chmod a-w bunch_of_things.txt 
+
+
+5 - chmod 644 bunch_of_things.txt 
+
+
+Parte III - Processos e jobs
+
+
+1 - ps 
+
+2 - sleep 30 &
+
+
+3 - ps
+    kill 14897
+    
+
+4 - sleep 30 
+    CTRL+Z
+    bg %1
+
+
+5  - sleep 300 & 
+
+6 - sleep 200
+    CTRL + Z
+    sleep 100 
+    CTRL +Z
+    
+7 - jobs 
+    fg %1
+    CTRL+Z
+    
+8 - bg %3
+
+9 - kill %1
+    kill %2
+    
+    
+PARTE IV - BÔNUS 
+
+
+1 - sudo apt-get install cmatrix 
+	cmatrix
+	
+	
+2 - sudo apt-get install fortune 
+    fortune | cat > fortune.txt
+
+3 - wc -l fortune.txt
+
+
+4 - sudo apt-ge install sl 
+    sl 
+    sl -F
+    
+5 - sudo apt-get install cowsay 
+    cowsay 
+    cat fortune.txt | cowsay 
+    
+6 - factor 42 
+
+
+7  - rev fortune.txt 
+
+
+8 - telnet towel.blinkenlights.nl 
+
