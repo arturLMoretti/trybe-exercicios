@@ -15,13 +15,13 @@
  
 ### Bloco 02 - Git, GitHub e Internet :white_check_mark:	
 #### [X] 2.1 - Git & GitHub - O que é e para que serve	
-#### [ ] 2.2 - Git & GitHub - Entendendo os comandos
-#### [ ] 2.3 - Internet - Entendendo como ela funciona
+#### [X] 2.2 - Git & GitHub - Entendendo os comandos
+#### [X] 2.3 - Internet - Entendendo como ela funciona
 
 
 ### Bloco 03 - Introdução à HTML e CSS :white_check_mark:
-#### [ ] Introdução HTML e CSS - Estrutura de página 
-#### [ ] Primeiros passos em CSS
+#### [X] Introdução HTML e CSS - Estrutura de página 
+#### [X] Primeiros passos em CSS
 #### [ ] Seletores e posicionamento 
 #### [ ] HTML semântico 
 
