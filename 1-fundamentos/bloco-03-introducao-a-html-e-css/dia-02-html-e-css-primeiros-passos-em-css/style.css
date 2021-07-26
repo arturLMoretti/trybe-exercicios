@@ -1,0 +1,37 @@
+
+        h1 {
+            font-size: 65px;
+            font-family: sans-serif;
+            color: orange;
+            text-align: center;
+        }
+
+        ul {
+            background-color: green;
+        }
+
+        .fundo_p_ul{
+            background-color: rgb(75, 255, 129);
+        }
+        body {
+          font-size: 16px;
+          font-style: italic;
+          line-height: 300%;
+          text-decoration: underline; 
+        }
+
+        p {
+          font-weight: 600;
+          font-size: 3em;
+          text-align: center;
+        }
+        
+        .amarelo{
+          color: yellow;
+        }
+        .vermelho{
+          color: red;
+        }
+        .marrom{
+          color: brown;
+        }
