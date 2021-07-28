@@ -1,13 +1,24 @@
-const nyName = "Artur";
-const birthCity = "Maringá";
-let birthYear = 1991;
+let movie = "Avengers"; // string literal
+let score = 10.89; // number literal
+let isValid = true; // boolean
+let name; // indefinida - undefined
+let color = null; // permite redefinição de valor
 
-console.log(nyName); 
-console.log(birthCity);
-console.log(birthYear);
+let salary = 3500;
 
-birthYear = 2030;
-console.log(birthYear);
+console.log(salary+salary);
+console.log(salary-salary);
+console.log(salary*salary);
+console.log(salary/salary);
+console.log(salary**salary);
 
-birthCity = "São Paulo";
-console.log(birthCity);
+// ++ - Incrementar
+// -- - Decrementar
+
+salary++;
+
+console.log(salary);
+
+salary--;
+
+console.log(salary);
