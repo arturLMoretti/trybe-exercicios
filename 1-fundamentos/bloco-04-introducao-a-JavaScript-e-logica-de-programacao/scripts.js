@@ -1,5 +1,13 @@
-const age = 20; 
-let Name = "Hulk"; 
+const nyName = "Artur";
+const birthCity = "Maringá";
+let birthYear = 1991;
 
-console.log(age); 
-console.log(Name);
+console.log(nyName); 
+console.log(birthCity);
+console.log(birthYear);
+
+birthYear = 2030;
+console.log(birthYear);
+
+birthCity = "São Paulo";
+console.log(birthCity);
