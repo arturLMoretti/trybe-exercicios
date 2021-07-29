@@ -1,24 +1,13 @@
-let movie = "Avengers"; // string literal
-let score = 10.89; // number literal
-let isValid = true; // boolean
-let name; // indefinida - undefined
-let color = null; // permite redefinição de valor
+let patientId = 50;
+let isEnrolled = true;
+const patientInfo = {
+  firstName: 'Ana',
+  lastName: 'Santos',
+};
+const patientEmail = 'ana@email.com';
 
-let salary = 3500;
-
-console.log(salary+salary);
-console.log(salary-salary);
-console.log(salary*salary);
-console.log(salary/salary);
-console.log(salary**salary);
-
-// ++ - Incrementar
-// -- - Decrementar
-
-salary++;
-
-console.log(salary);
-
-salary--;
-
-console.log(salary);
+console.log(typeof patientId);
+console.log(typeof isEnrolled);
+console.log(typeof patientInfo);
+console.log(typeof patientEmail);
+console.log(pacientAge);
