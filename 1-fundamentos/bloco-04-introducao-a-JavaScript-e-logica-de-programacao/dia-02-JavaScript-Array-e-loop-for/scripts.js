@@ -18,3 +18,12 @@ for (i = 0; i<numbers.length; i+=1){
     soma = soma + numbers[i];
 }
 console.log('A soma é: ' + soma);
+
+// Ex. 3
+
+soma = 0;
+
+for (i = 0; i<numbers.length; i+=1){
+    soma = soma + numbers[i];
+}
+console.log('A média é: ' + soma/numbers.length);
