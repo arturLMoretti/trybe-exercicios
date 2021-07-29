@@ -51,3 +51,15 @@ for (j = 0; j < numbers.length; j+=1){
 
 }
 console.log(maior);
+
+// Ex. 6
+
+let impares = 0;
+for (j = 0; j < numbers.length; j+=1){
+    
+    if ((numbers[j]%2) !== 0 ){
+        impares++;
+    }
+
+}
+console.log(impares);
