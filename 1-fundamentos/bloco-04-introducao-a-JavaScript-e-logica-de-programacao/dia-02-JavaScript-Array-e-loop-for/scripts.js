@@ -50,7 +50,7 @@ for (j = 0; j < numbers.length; j+=1){
     }
 
 }
-console.log(maior);
+console.log("O maior número é " + maior);
 
 // Ex. 6
 
@@ -62,4 +62,7 @@ for (j = 0; j < numbers.length; j+=1){
     }
 
 }
-console.log(impares);
+if (impares===0){
+    console.log("Nenhum valor ímpar encontrado")
+}
+console.log("Existem " + impares+ " números ímpares");
