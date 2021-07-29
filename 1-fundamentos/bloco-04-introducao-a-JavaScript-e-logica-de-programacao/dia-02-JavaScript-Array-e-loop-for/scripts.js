@@ -10,3 +10,11 @@ for (let numeros of numbers){
     console.log('usando o for/of: ' +numeros);
 }
 
+// Ex. 2
+
+let soma = 0;
+
+for (i = 0; i<numbers.length; i+=1){
+    soma = soma + numbers[i];
+}
+console.log('A soma é: ' + soma);
