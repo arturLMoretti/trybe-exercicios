@@ -79,3 +79,12 @@ for (j = 0; j < numbers.length; j+=1){
 
 }
 console.log("O menor número é " + menor);
+
+// Ex. 8
+
+let array= [1];
+
+for (i = 2; i<26;i+=1){
+    array.push(i);
+}
+console.log(array);
