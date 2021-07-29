@@ -13,17 +13,25 @@
 #### [X] 1.3 - Unix & Bash - Parte I 	
 #### [X] 1.4 - Unix & Bash - Parte II 	
  
-### Bloco 02 - Git, GitHub e Internet :white_check_mark:	
+### Bloco 02 - Git, GitHub e Internet :heavy_check_mark:	
 #### [X] 2.1 - Git & GitHub - O que é e para que serve	
 #### [X] 2.2 - Git & GitHub - Entendendo os comandos
 #### [X] 2.3 - Internet - Entendendo como ela funciona
 
 
-### Bloco 03 - Introdução à HTML e CSS :white_check_mark:
+### Bloco 03 - Introdução à HTML e CSS :heavy_check_mark:
 #### [X] Introdução HTML e CSS - Estrutura de página 
 #### [X] Primeiros passos em CSS
-#### [ ] Seletores e posicionamento 
-#### [ ] HTML semântico 
+#### [X] Seletores e posicionamento 
+#### [X] HTML semântico 
+
+### Bloco 04 - Introdução à JavaScript e Lógica de Programação
+#### [X] Introdução - JavaScript
+#### [X] JavaScript - Primeiros Passos
+#### [X] JavaScript - Array e loop For
+#### [ ] JavaScript - Lógica de Programação e Algoritmos
+#### [ ] JavaScript - Objetos e funções
+#### [ ] Projeto    - Playground Functions
 
 ## 02 - Desenvolvimento Front-End :hourglass_flowing_sand: 
 
