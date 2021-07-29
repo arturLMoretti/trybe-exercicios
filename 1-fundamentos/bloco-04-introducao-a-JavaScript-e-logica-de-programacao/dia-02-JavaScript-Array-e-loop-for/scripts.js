@@ -66,3 +66,16 @@ if (impares===0){
     console.log("Nenhum valor ímpar encontrado")
 }
 console.log("Existem " + impares+ " números ímpares");
+
+
+// Ex. 7
+
+let menor = numbers[1];
+for (j = 0; j < numbers.length; j+=1){
+    
+    if (numbers[j]<=menor){
+        menor = numbers[j];
+    }
+
+}
+console.log("O menor número é " + menor);
