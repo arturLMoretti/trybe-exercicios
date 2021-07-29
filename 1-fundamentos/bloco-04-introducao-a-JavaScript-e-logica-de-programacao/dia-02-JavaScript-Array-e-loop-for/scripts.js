@@ -26,4 +26,16 @@ soma = 0;
 for (i = 0; i<numbers.length; i+=1){
     soma = soma + numbers[i];
 }
-console.log('A média é: ' + soma/numbers.length);
+
+let media = soma/numbers.length;
+console.log('A média é: ' + media);
+
+
+// Ex. 4
+
+
+if (media > 20){
+    console.log ('valor maior que 20');
+} else {
+    console.log ('valor menor ou igual a 20');
+}
