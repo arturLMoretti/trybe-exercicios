@@ -1,0 +1,74 @@
+Dia 4.2
+
+Exercício 1:
+
+1 - Criar o array numbers;
+2 - criar um loop for para percorrer cada elemento; 
+3 - Em cada elemento, usar comando console.log 
+
+
+Exercício 2: 
+
+1 - Vetor já está criado anteriormente;
+2 - Criar uma variável para indicar a soma;
+2 - Criar um loop for para percorrer cada elemento; 
+3 - Atualizar a variável soma, somando ela ao elemento atual do loop;
+4 - Sair do loop e usar o comando para imprimir 
+
+
+Exercício 3: 
+
+1 - Soma dos elementos já está disponível anteriormente;
+2 - Criar uma variável para armazenar a média; 
+3 - Dividir a soma, já obtida, pelo tamnho do vetor;
+4 - Usar comando para exibir a média
+
+
+Exercício 4
+
+1 - A variavel média já foi obtida anteriormente;
+2 - Criar um laço if com a comparação média>20. No primeiro usar código para imprimir a frase 'valor maior que 20'.
+3 - No laço else, usar código para imprimir a frase 'valor menor que 20'
+
+
+Exercício 5
+
+1 - Criar uma variável para armazenar o maior número, atribuir o primeiro valor da lista; 
+2 - Criar um loop para comparar este valor com os demais;
+3 - Criar um laço if. Caso o valor comparado for maior que a variável maior, a variável maior recebe esse valor 
+4 - fora do loop, criar um comando para imprimir a variável maior
+
+
+Exercício 6 
+
+1 - Criar uma variável para contar os valores impares. atribuir valor zero; 
+2 - Criar um loop para varrer todos os valore do vetor 
+3 - Criar uma condicional. Dentro da condicional usar a função mod e o número 2 pra encontrar o resto da divisão do número por 2
+4 - Caso o valor dessa função for diferente de zero, o número é ímpar, então a variável de contagem é acrescida de um. 
+5 - Fora do loop, criar outra condicional. Caso a variável de contagem for igual a zero, imprimir "nenum valor ímpa encontrado"
+
+
+Exercício 7 
+
+1 - Criar uma variável para armazenar o primeiro elemento do vetor
+2 - Criar um loop for para percorrer todo este vetor. 
+3 - Dentro do loop, criar um laço if. Caso o valor do elemento for menor que a variável menor, a variável menor recebe esse número 
+4 - Fora do loop, imprimir o valor da variável menor 
+
+
+Exercício 8 
+
+1 - Criar uma variável e atribua o valor 0;
+2 - Criar um loop de tal forma que permita ser realizado 25 vezes 
+3 - Em cada rodada, é atribuida a variável o valor da variável de indexação 
+4 - Fora do loop, iniserir comando para mostrar resultado 
+
+
+Exercício 9 
+
+
+1 - Criar um loop for que vai até o comprimento do vetor 
+2 - Imprimir o valor da divisão de cada componente por 2
+
+
+
