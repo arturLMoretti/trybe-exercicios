@@ -80,7 +80,7 @@ for (j = 0; j < numbers.length; j+=1){
 }
 console.log("O menor número é " + menor);
 
-// Ex. 8
+// Ex. 8 e 9
 
 let array= [1];
 
@@ -92,3 +92,53 @@ console.log(array);
 for (i = 0; i<array.length; i+=1){
     console.log(array[i]/2);
 }
+
+// Bônus 
+
+// 1 
+
+
+console.log (numbers);
+for (let index = 1; index < numbers.length; index += 1) {
+    for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+      if (numbers[index] < numbers[secondIndex]) {
+        let position = numbers[index];
+        numbers[index] = numbers[secondIndex];
+        numbers[secondIndex] = position;
+      }
+    }
+  }
+
+
+  console.log(numbers);
+
+
+  // 2 
+
+for (let index = 1; index < numbers.length; index += 1) {
+    for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+      if (numbers[index] > numbers[secondIndex]) {
+        let position = numbers[index];
+        numbers[index] = numbers[secondIndex];
+        numbers[secondIndex] = position;
+      }
+    }
+  }
+
+  console.log(numbers);
+
+
+  // 3 
+
+numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+let numbersModificado = [0];
+
+for (let j = 0; j<numbers.length; j+=1){
+    if (j<numbers.length-1){
+        numbersModificado[j] = numbers[j]*numbers[j+1];
+    } else if (j===numbers.length-1){
+        numbersModificado[j] = numbers[j]*2;
+    }
+}
+console.log(numbersModificado);
