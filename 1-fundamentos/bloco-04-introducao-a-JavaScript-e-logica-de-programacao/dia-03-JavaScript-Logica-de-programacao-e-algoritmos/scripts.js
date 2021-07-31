@@ -42,3 +42,13 @@ let espacos = "";
    
     console.log(espacos);
 }
+
+
+// Exercício 4
+
+let n4 = 5;
+
+
+for (let i = 0; i<n4; i+=1){
+
+}
