@@ -20,6 +20,7 @@
         </section>
       </main>
       <script>
+      // Parte I - Buscando elementos
           // 1 - Acesse o elemento elementoOndeVoceEsta .
             let Elemento = document.querySelector('#elementoOndeVoceEsta');
           //console.log (Elemento);
@@ -39,7 +40,26 @@
             console.log(Elemento.nextElementSibling)
           // 8 - Agora acesse o terceiroFilho a partir de pai .
             console.log(document.querySelector('#pai').lastElementChild.previousElementSibling)
+      
+      // Parte II - Criando elementos
+          // 1 - Crie um irmão para elementoOndeVoceEsta
+            let elementoIrmao = document.createElement('section');
+            elementoIrmao.id = 'quintoEAgoraSimUltimoFilho';
             
+            Elemento.parentElement.appendChild(elementoIrmao);
+            console.log(elementoIrmao);
+          // 2 - Crie um filho para elementoOndeVoceEsta .
+            let filho = document.createElement('section');
+            filho.id = 'terceiroEAgoraSimUltimoFilhoDoFilho';
+            Elemento.appendChild(filho);
+            console.log(filho);
+          // 3 - Crie um filho para primeiroFilhoDoFilho .
+            let neto = document.createElement('section');
+            neto.id = 'primeiroFilhoDoFilhoDoFilho';
+            Elemento.appendChild(neto);
+            console.log(neto);
+          // 4 - A partir desse filho criado, acesse terceiroFilho .
+            console.log(document.querySelector('#primeiroFilhoDoFilhoDoFilho').parentElement.nextElementSibling);
         </script>
 </body>
 </html>
