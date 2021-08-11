@@ -9,14 +9,14 @@
 <body>
     <main id="paiDoPai">
         <section id="pai">
-          <section id="primeiroFilho"></section>
+          <section class = 'deletar' id="primeiroFilho"></section>
           <section id="elementoOndeVoceEsta">
             <section id="primeiroFilhoDoFilho"></section>
-            <section id="segundoEUltimoFilhoDoFilho"></section>
+            <section class = 'deletar' id="segundoEUltimoFilhoDoFilho"></section>
           </section>
           Atenção!
-          <section id="terceiroFilho"></section>
-          <section id="quartoEUltimoFilho"></section>
+          <section class = 'deletar' id="terceiroFilho"></section>
+          <section class = 'deletar' id="quartoEUltimoFilho"></section>
         </section>
       </main>
       <script>
@@ -45,21 +45,30 @@
           // 1 - Crie um irmão para elementoOndeVoceEsta
             let elementoIrmao = document.createElement('section');
             elementoIrmao.id = 'quintoEAgoraSimUltimoFilho';
-            
+            elementoIrmao.className = 'deletar'
             Elemento.parentElement.appendChild(elementoIrmao);
-            console.log(elementoIrmao);
-          // 2 - Crie um filho para elementoOndeVoceEsta .
+
+            // 2 - Crie um filho para elementoOndeVoceEsta .
             let filho = document.createElement('section');
             filho.id = 'terceiroEAgoraSimUltimoFilhoDoFilho';
+            filho.className = 'deletar';
             Elemento.appendChild(filho);
             console.log(filho);
           // 3 - Crie um filho para primeiroFilhoDoFilho .
             let neto = document.createElement('section');
             neto.id = 'primeiroFilhoDoFilhoDoFilho';
+            neto.className = 'deletar';
             Elemento.appendChild(neto);
             console.log(neto);
           // 4 - A partir desse filho criado, acesse terceiroFilho .
             console.log(document.querySelector('#primeiroFilhoDoFilhoDoFilho').parentElement.nextElementSibling);
+        
+      // Parte III - Removendo elementos
+        // Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+          var no = document.getNode("deletar");
+          console.log(no)
+          Elemento.removeChild(no);
         </script>
+        
 </body>
 </html>
