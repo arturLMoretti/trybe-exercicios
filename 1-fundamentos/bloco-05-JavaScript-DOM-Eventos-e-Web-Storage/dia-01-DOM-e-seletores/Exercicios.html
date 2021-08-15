@@ -64,8 +64,18 @@
  let textoCorreto = document.getElementsByTagName('h1');
  textoCorreto[0].innerText = 'Exercício 5.1 - JavaScript';   
  // Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+ let textoPParaMaiusculo = document.getElementsByTagName('p');
+ for (let i = 0; i <textoPParaMaiusculo.length; i +=1) {
+  textoPParaMaiusculo[i].innerText = textoPParaMaiusculo[i].innerText.toUpperCase();
+ }
  // Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-        
+  imprimePNoConsole();
+    function imprimePNoConsole() {
+      let paragrafosTodos = document.getElementsByTagName('p');
+      for (let i = 0; i < paragrafosTodos.length; i +=1) {
+        console.log(paragrafosTodos[i].innerHTML);
+      }
+    }
     </script>
   </body>
 </html>
