@@ -29,7 +29,7 @@
 #### [X] Introdução - JavaScript
 #### [X] JavaScript - Primeiros Passos
 #### [X] JavaScript - Array e loop For
-#### [ ] JavaScript - Lógica de Programação e Algoritmos
+#### [X] JavaScript - Lógica de Programação e Algoritmos
 #### [ ] JavaScript - Objetos e funções
 #### [ ] Projeto    - Playground Functions
 
