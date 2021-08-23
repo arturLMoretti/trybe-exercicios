@@ -58,3 +58,28 @@ function createDaysOfTheWeek() {
   localBotao.appendChild(button);
 
   // Exercício 3
+
+  function changeColorHolidays() {
+    const holidays = document.getElementsByClassName('holiday');
+
+    for (let i = 0; i <holidays.length; i += 1) {
+      if (holidays[i].style.backgroundColor === 'rgb(238, 238, 238)') {
+    
+        holidays[i].style.backgroundColor = 'rgb(0, 204, 0)';
+    
+      } else if (holidays[i].style.backgroundColor === 'rgb(0, 204, 0)') {
+    
+        holidays[i].style.backgroundColor = 'rgb(238, 238, 238)';
+    
+      }
+    }
+    
+
+    
+  }
+  const holidays = document.getElementsByClassName('holiday');
+  for (let i = 0; i < holidays.length; i += 1) {
+    holidays[i].style.backgroundColor = 'rgb(238,238,238)';
+  }
+  button.addEventListener('click', changeColorHolidays);
+
