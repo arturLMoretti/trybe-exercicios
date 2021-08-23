@@ -103,7 +103,6 @@ var originalFridayDays = ['4','11', '18', '25' ];
     for (let i = 0; i < sexta.length; i += 1) {
       
       if (sexta[i].innerText === 'Sextou!!!') {
-        console.log(originalFridayDays[0].innerText)
         sexta[i].innerText = originalFridayDays[i];
       } else {
         sexta[i].innerText = 'Sextou!!!'
@@ -119,7 +118,7 @@ var originalFridayDays = ['4','11', '18', '25' ];
 const dayClass = document.getElementById('days');
 
 function mouseOver(event) {
-  event.target.style.fontSize = '45px';
+  event.target.style.fontSize = '30px';
 }
 
 function mouseLeave(event) {
@@ -130,4 +129,22 @@ dayClass.addEventListener('mouseover', mouseOver);
 dayClass.addEventListener('mouseout', mouseLeave);
 
 // Exercício 7
+const addButton = document.getElementById('btn-add');
+
+function addTask() {
+
+  const taskText = document.getElementById('task-input');
+  const mytasks  = document.querySelector('.my-tasks');
+  const task = taskText.value;
+  taskText.value = '';
+
+  taskList = document.createElement('span')
+  taskList.innerText = task;
+  taskList.style.display = 'block'
+
+  mytasks.appendChild(taskList);
+}
+
+
+addButton.addEventListener('click', addTask);
 
