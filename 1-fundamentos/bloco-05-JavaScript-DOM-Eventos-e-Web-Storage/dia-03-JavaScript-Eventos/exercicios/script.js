@@ -83,3 +83,33 @@ function createDaysOfTheWeek() {
   }
   button.addEventListener('click', changeColorHolidays);
 
+// Exercício 4 
+const sexta = 'Sexta-Feira';
+
+  const button2 = document.createElement('button');
+  button2.id = 'btn-friday';
+  button2.innerText = 'Sexta-Feira';
+  button2.style.padding = '5px 20px';
+  button2.style.backgroundColor = 'rgb(200,152,148)'
+  button2.style.fontSize = '20px'
+  
+  localBotao.appendChild(button2);
+
+  // Exercício 5
+var originalFridayDays = ['4','11', '18', '25' ];
+  function changeTextFriday() {
+    const sexta = document.getElementsByClassName('friday');
+    
+    for (let i = 0; i < sexta.length; i += 1) {
+      
+      if (sexta[i].innerText === 'Sextou!!!') {
+        console.log(originalFridayDays[0].innerText)
+        sexta[i].innerText = originalFridayDays[i];
+      } else {
+        sexta[i].innerText = 'Sextou!!!'
+      }
+    }
+    
+  }
+  
+  button2.addEventListener('click', changeTextFriday);
