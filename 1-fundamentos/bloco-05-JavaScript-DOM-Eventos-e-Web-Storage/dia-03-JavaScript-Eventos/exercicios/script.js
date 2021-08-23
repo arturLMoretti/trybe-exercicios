@@ -118,7 +118,7 @@ var originalFridayDays = ['4','11', '18', '25' ];
 const dayClass = document.getElementById('days');
 
 function mouseOver(event) {
-  event.target.style.fontSize = '30px';
+  event.target.style.fontSize = '25px';
 }
 
 function mouseLeave(event) {
@@ -140,11 +140,47 @@ function addTask() {
 
   taskList = document.createElement('span')
   taskList.innerText = task;
-  taskList.style.display = 'block'
+//  taskList.style.display = 'inline-block'
 
   mytasks.appendChild(taskList);
+
 }
 
 
 addButton.addEventListener('click', addTask);
 
+// Exercício 8
+
+// Gera cores aleatórias em RGB
+// Obtida do usuário adeneo em
+// https://stackoverflow.com/questions/23095637/how-do-you-get-random-rgb-in-javascript
+function randomRgb() {
+  const o = Math.round;
+  const r = Math.random;
+  const s = 255;
+
+  let cor1 = o(r() * s) + 1;
+  let cor2 = o(r() * s) + 1;
+  let cor3 = o(r() * s) + 1;
+
+  if ((cor1 === 255) && (cor2 === 255) && (cor3 === 255)) {
+    cor1 = o(r() * (s - 1));
+    cor2 = o(r() * (s - 1));
+    cor3 = o(r() * (s - 1));
+  }
+
+  return `rgb(${cor1},${cor2},${cor3})`;
+}
+
+function addTaskLegend() {
+  const mytasks  = document.querySelector('.my-tasks');
+  const taskColor = randomRgb();
+
+  taskColorLegend = document.createElement('div')
+  taskColorLegend.style.backgroundColor = taskColor;
+
+  mytasks.appendChild(taskColorLegend);
+  const space = document.createElement('br');
+  mytasks.appendChild(space);
+}
+addButton.addEventListener('click', addTaskLegend);
