@@ -129,4 +129,5 @@ function mouseLeave(event) {
 dayClass.addEventListener('mouseover', mouseOver);
 dayClass.addEventListener('mouseout', mouseLeave);
 
-//
+// Exercício 7
+
