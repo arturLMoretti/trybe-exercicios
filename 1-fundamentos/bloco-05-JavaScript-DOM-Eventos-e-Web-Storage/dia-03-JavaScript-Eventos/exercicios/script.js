@@ -113,3 +113,20 @@ var originalFridayDays = ['4','11', '18', '25' ];
   }
   
   button2.addEventListener('click', changeTextFriday);
+
+  // Exercicio 6
+
+const dayClass = document.getElementById('days');
+
+function mouseOver(event) {
+  event.target.style.fontSize = '45px';
+}
+
+function mouseLeave(event) {
+  event.target.style.fontSize = '20px';
+}
+
+dayClass.addEventListener('mouseover', mouseOver);
+dayClass.addEventListener('mouseout', mouseLeave);
+
+//
