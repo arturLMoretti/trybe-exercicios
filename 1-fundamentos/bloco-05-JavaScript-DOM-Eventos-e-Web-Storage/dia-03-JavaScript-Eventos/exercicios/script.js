@@ -178,9 +178,33 @@ function addTaskLegend() {
 
   taskColorLegend = document.createElement('div')
   taskColorLegend.style.backgroundColor = taskColor;
+  taskColorLegend.className = 'task';
 
   mytasks.appendChild(taskColorLegend);
   const space = document.createElement('br');
   mytasks.appendChild(space);
 }
 addButton.addEventListener('click', addTaskLegend);
+
+// Exercício 9 
+function changeTaskSelected(evento) {
+
+  if (evento.path[0].classList.length === 1) {
+    evento.path[0].classList.add('selected');
+  } else {
+    evento.path[0].classList.remove('selected');
+  }
+
+  const allTasks = document.getElementsByClassName('task');
+
+  for (let i = 1; i < allTasks.length; i += 1) {
+    if (allTasks[i] !== evento.path[0]) {
+      allTasks[i].classList.remove('selected');
+    }
+  }
+}
+const mytasks  = document.querySelectorAll('.my-tasks');
+
+for (let j = 0; j < mytasks.length; j += 1) {
+  mytasks[j].addEventListener('click', changeTaskSelected);
+}
