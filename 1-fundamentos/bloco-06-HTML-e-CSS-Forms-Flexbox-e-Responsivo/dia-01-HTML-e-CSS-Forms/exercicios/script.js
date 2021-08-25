@@ -1,11 +1,38 @@
 function evitarDefault(evt) {
-    evt.preventDefault();
+  evt.preventDefault();
+  const nomeVazioAlerta = document.getElementById('nome');
+  const emailVazioAlerta = document.getElementById('email')
+  const cpfVazioAlerta = document.getElementById('cpf')
+  const enderecoVazioAlerta = document.getElementById('endereco')
+  const cidadeVazioAlerta = document.getElementById('cidade')
+  const EstadoVazioAlerta = document.getElementById('Estado')
+
+  if (nomeVazioAlerta.value === '') {
+    alert('Insira seu nome completo!');
+  }
+  if (emailVazioAlerta.value === '') {
+    alert('Insira seu e-mail!');
+  }
+  if (cpfVazioAlerta.value === '') {
+    alert('Insira seu CPF!');
+  }
+  if (enderecoVazioAlerta.value === '') {
+    alert('Insira seu endereço!');
+  }
+  if (cidadeVazioAlerta.value === '') {
+    alert('Insira a cidade aonde mora!');
+  }
+  if (EstadoVazioAlerta.value === 'Selecione') {
+    alert('Insira o estado aonde mora!');
+  }
+
 }
 
 let botaoEnviarCurriculo = document.getElementById('botaoSubmeter');
 botaoEnviarCurriculo.addEventListener('click', evitarDefault);
 
 let estados =  [
+    'Selecione',
     'Acre',
     'Alagoas',
     'Amapá',
