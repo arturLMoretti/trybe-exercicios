@@ -201,10 +201,18 @@ function changeTaskSelected(evento) {
     if (allTasks[i] !== evento.path[0]) {
       allTasks[i].classList.remove('selected');
     }
+    
   }
+  const selected = document.querySelector('.selected');
+  var color = selected.style.backgroundColor;
+  console.log(selected.style.backgroundColor);
+
 }
 const mytasks  = document.querySelectorAll('.my-tasks');
 
 for (let j = 0; j < mytasks.length; j += 1) {
   mytasks[j].addEventListener('click', changeTaskSelected);
 }
+
+// Exercício 10 
+
