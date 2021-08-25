@@ -30,8 +30,27 @@
 #### [X] JavaScript - Primeiros Passos
 #### [X] JavaScript - Array e loop For
 #### [X] JavaScript - Lógica de Programação e Algoritmos
-#### [ ] JavaScript - Objetos e funções
-#### [ ] Projeto    - Playground Functions
+#### [X] JavaScript - Objetos e funções
+
+### Bloco 05 - JavaScript: DOM, Eventos e Web Storage
+#### [X] Javascript - DOM e seletores
+#### [X] JavaScript - Trabalhando com elementos
+#### [X] JavaScript - Eventos
+#### [X] JavaScript - Web Storage
+
+### Bloco 06 - HTML e CSS: FOrms, Flexbox e Responsivo
+#### [ ] HTML & CSS - Forms
+#### [ ] Bibliotecas JavaScript e Framework CSS
+#### [ ] Introdução - CSS Flexbox
+#### [ ] CSS Flexbos - Parte 1
+#### [ ] CSS Flexbox - Parte 2
+#### [ ] CSS Responsivo - Mobile First
+
+### Bloco 07 - Introdução à JavaScript ES6 e Testes Unitários
+#### [ ] JavaScript ES6 - let, const, arrow functions e templates literais
+#### [ ] JavaScript ES6 - Objects
+#### [ ] Testes unitários em JavaScript
+
 
 ## 02 - Desenvolvimento Front-End :hourglass_flowing_sand: 
 
