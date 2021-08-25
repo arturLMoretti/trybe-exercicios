@@ -25,14 +25,14 @@
 #### [X] Seletores e posicionamento 
 #### [X] HTML semântico 
 
-### Bloco 04 - Introdução à JavaScript e Lógica de Programação
+### Bloco 04 - Introdução à JavaScript e Lógica de Programação :heavy_check_mark:
 #### [X] Introdução - JavaScript
 #### [X] JavaScript - Primeiros Passos
 #### [X] JavaScript - Array e loop For
 #### [X] JavaScript - Lógica de Programação e Algoritmos
 #### [X] JavaScript - Objetos e funções
 
-### Bloco 05 - JavaScript: DOM, Eventos e Web Storage
+### Bloco 05 - JavaScript: DOM, Eventos e Web Storage :heavy_check_mark:
 #### [X] Javascript - DOM e seletores
 #### [X] JavaScript - Trabalhando com elementos
 #### [X] JavaScript - Eventos
