@@ -128,32 +128,8 @@ function mouseLeave(event) {
 dayClass.addEventListener('mouseover', mouseOver);
 dayClass.addEventListener('mouseout', mouseLeave);
 
-// Exercício 7
+// Exercício 7 e 8 refatorado
 const addButton = document.getElementById('btn-add');
-
-function addTask() {
-
-  const taskText = document.getElementById('task-input');
-  const mytasks  = document.querySelector('.my-tasks');
-  const task = taskText.value;
-  taskText.value = '';
-
-  taskList = document.createElement('span')
-  taskList.innerText = task;
-//  taskList.style.display = 'inline-block'
-
-  mytasks.appendChild(taskList);
-
-}
-
-
-addButton.addEventListener('click', addTask);
-
-// Exercício 8
-
-// Gera cores aleatórias em RGB
-// Obtida do usuário adeneo em
-// https://stackoverflow.com/questions/23095637/how-do-you-get-random-rgb-in-javascript
 function randomRgb() {
   const o = Math.round;
   const r = Math.random;
@@ -184,7 +160,29 @@ function addTaskLegend() {
   const space = document.createElement('br');
   mytasks.appendChild(space);
 }
-addButton.addEventListener('click', addTaskLegend);
+function addTask() {
+
+  const taskText = document.getElementById('task-input');
+  const mytasks  = document.querySelector('.my-tasks');
+  const task = taskText.value;
+  console.log(taskText.value)
+  if (task === '') {
+    alert('Insira Uma tarefa válida!')
+  } else {
+  
+  taskText.value = '';
+
+  taskList = document.createElement('span')
+  taskList.innerText = task;
+//  taskList.style.display = 'inline-block'
+
+  mytasks.appendChild(taskList);
+  addTaskLegend()
+  }
+}
+
+
+addButton.addEventListener('click', addTask);
 
 // Exercício 9
 function changeTaskSelected(evento) {
@@ -236,3 +234,13 @@ const daysColor = document.querySelector('.days-container');
 daysColor.addEventListener('click', selectChangeDayColor);
 
 // BÔNUS
+
+function enterKey(event) {
+  var keyCode = event.which || event.keyCode;
+  
+  if (keyCode === 13) {
+    addTask();
+  };
+}
+const input = document.getElementById('task-input');
+input.addEventListener('keydown', enterKey)
