@@ -186,7 +186,7 @@ function addTaskLegend() {
 }
 addButton.addEventListener('click', addTaskLegend);
 
-// Exercício 9 
+// Exercício 9
 function changeTaskSelected(evento) {
 
   if (evento.path[0].classList.length === 1) {
@@ -196,17 +196,18 @@ function changeTaskSelected(evento) {
   }
 
   const allTasks = document.getElementsByClassName('task');
-
-  for (let i = 1; i < allTasks.length; i += 1) {
+  
+  
+  for (let i = 0; i < allTasks.length; i += 1) {
     if (allTasks[i] !== evento.path[0]) {
       allTasks[i].classList.remove('selected');
     }
     
   }
   const selected = document.querySelector('.selected');
-  var color = selected.style.backgroundColor;
-  console.log(selected.style.backgroundColor);
-
+  if (selected !== null) {
+    var color = selected.style.backgroundColor;
+  }
 }
 const mytasks  = document.querySelectorAll('.my-tasks');
 
@@ -215,4 +216,23 @@ for (let j = 0; j < mytasks.length; j += 1) {
 }
 
 // Exercício 10 
+//const initialFontColor =
 
+function selectChangeDayColor(evento) {
+  const selectedTask = document.querySelector('.selected');
+  
+  console.log(evento.path[0].style.color);
+  console.log(selectedTask.style.backgroundColor);
+  const taskBC = selectedTask.style.backgroundColor;
+  const eventColor = evento.path[0].style.color;
+  if (taskBC === eventColor){
+    evento.path[0].style.color = 'rgb(119, 119, 119)';
+  } else {
+    evento.path[0].style.color = selectedTask.style.backgroundColor;
+  }
+}
+
+const daysColor = document.querySelector('.days-container');
+daysColor.addEventListener('click', selectChangeDayColor);
+
+// BÔNUS

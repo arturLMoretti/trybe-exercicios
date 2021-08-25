@@ -37,6 +37,9 @@
     width: 13.6%;
   }
   
+  #days li:hover {
+    cursor: pointer;
+  }
   .input-container {
     width: 49%;
     height: 100px;
