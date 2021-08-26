@@ -6,6 +6,7 @@
 
 body {
     background-color: rgb(236, 237, 238);
+    text-align: center;
 }
 
 header {
@@ -28,8 +29,10 @@ div {
     margin-bottom: 15px;
 }
 
-fieldset {
-    margin-bottom: 15px;
+textarea {
+    display: block;
+    text-align: left;
+    width: 100%;
 }
 
 .formulario {
@@ -40,16 +43,25 @@ fieldset {
 }
 
 .campos-formulario {
-    text-align: center;
-    margin: 20px auto;
+    display: block;
+    text-align: right;
+    margin: 15px auto;
     width: 100%;
 }
 
-.campos-formulario input{
-    font-size: 20px;
+.campos-formulario select {
+    text-align: center;
+}
+
+.formulario input {
+    font-size: 15px;
+    margin-right: 40px;
+    width: 60%;
+    height: 20px;
 }
 
 #botaoSubmeter {
+    display: block;
     font-size: 20px;
     padding: 10px 25px;
 }
