@@ -59,12 +59,17 @@ const fatorial3 = (n) => { return (n <= 1) ? 1 : n*fatorial3(n-1);}
 function longestWord(palavra) {
     let palavras = palavra.split(' ');
     let tamPalavras = [];
-
+    let maiorPalavra = '';
+    let maior = 0;
     for (let i = 0; i < palavras.length; i += 1) {
-        tamPalavras[i] = palavras[i].length;
+      tamPalavras[i] = palavras[i].length;
+      if (tamPalavras[i] > maior) {
+        maior = tamPalavras[i];
+        maiorPalavra = palavras[i];
+      }
     }
-  console.log(tamPalavras);
+    return maiorPalavra
 }
 
 
-  console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")) // retorna 'aconteceu'
+  console.log(longestWord("Antônio foi inconstitucionalissimamente no banheiro e não sabemos o que aconteceu")) // retorna 'aconteceu'
