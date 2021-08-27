@@ -46,25 +46,33 @@
                     <select name="estado" id="Estado"></select>
                 </div>
                 
-                <div class="campos-formularios casa-apto">
-                    <input type="radio" name="moradia" id="casa" value="Casa" required>
-                    <label for="casa">Casa</label>
-                    <br>
-                    <input type="radio" name="moradia" id="apto" value="Apartamento" required>
-                    <label for="apto">Apartamento</label>
+                <div class="campos-formulario casa-apto">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>Moro em:</td>
+                          <td><input type="radio" name="moro-em" id="casa" value="1"></td>
+                          <td>Casa</td>
+                          <td><input type="radio" name="moro-em"id="apto" value="2"></td>
+                          <td>Apartamento</td>
+                  
+                        </tr>
+                      </tbody>
+                    </table>
                 </div>
+
             </fieldset>  
             
             <fieldset class = "experiencia">
                 <h2>Experiência Profissional</h2>
                 <div class="campos-formularios">
                     <label for="resumo-curriculo">Resumo do Currículo</label>
-                    <textarea name="resCurriculo" id="resumo-curriculo" cols="30" rows="10" maxlength="1000" required placeholder="Ex: Auxiliar de assuntos auxiliares por três anos, busco uma profissão menos auxiliadora"></textarea>
+                    <textarea name="resCurriculo" id="resumo-curriculo" cols="30" rows="10" maxlength="1000" required placeholder="Ex: Auxiliar de assuntos auxiliares por três anos"></textarea>
                 </div>
 
                 <div class="campos-formularios">
                     <label for="cargo">Cargo atual</label>
-                    <input type="text" name="cargo" id="" required placeholder="Ex: Auxiliar de assuntos auxiliares" maxlength="40">
+                    <input type="text" name="cargo" id="cargo" required placeholder="Ex: Auxiliar de assuntos auxiliares" maxlength="40">
                 </div>
 
                 <div class="campos-formularios">

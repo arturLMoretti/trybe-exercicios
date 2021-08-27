@@ -6,27 +6,59 @@ function evitarDefault(evt) {
   const enderecoVazioAlerta = document.getElementById('endereco')
   const cidadeVazioAlerta = document.getElementById('cidade')
   const EstadoVazioAlerta = document.getElementById('Estado')
+  const casaRadio = document.getElementById('casa');
+  const AptoRadio = document.getElementById('apto');
+  const resumoVazioAlerta = document.getElementById('resumo-curriculo');
+  const cargoVazioAlerta = document.getElementById('cargo');
+  const descCargoVazioAlerta = document.getElementById('descricao-cargo');
+  const dataInicioVazioAlerta = document.getElementById('data');
 
   if (nomeVazioAlerta.value === '') {
     alert('Insira seu nome completo!');
   }
+
   if (emailVazioAlerta.value === '') {
     alert('Insira seu e-mail!');
   }
+
   if (cpfVazioAlerta.value === '') {
     alert('Insira seu CPF!');
   }
+
   if (enderecoVazioAlerta.value === '') {
     alert('Insira seu endereço!');
   }
+
   if (cidadeVazioAlerta.value === '') {
     alert('Insira a cidade aonde mora!');
   }
+
   if (EstadoVazioAlerta.value === 'Selecione') {
     alert('Insira o estado aonde mora!');
   }
 
+  if ((casaRadio.checked === false) && (AptoRadio.checked == false)) {
+    alert("Selecione 'Casa' caso more em uma casa ou 'Apartamento' caso more em apartamento")
+  }
+
+  if (resumoVazioAlerta.value === '') {
+    alert('Insira o resumo da sua carreira!');
+  }
+
+  if (cargoVazioAlerta.value === '') {
+    alert('Insira seu cargo atual!');
+  }
+
+  if (descCargoVazioAlerta.value === '') {
+    alert('Insira uma descrição para seu cargo atual!');
+  }
+
+  if (dataInicioVazioAlerta.value === '') {
+    alert('Insira a data de início do seu emprego atual!');
+  }
 }
+const resumoVazioAlerta = document.getElementById('resumo-curriculo');
+    console.log(resumoVazioAlerta)
 
 let botaoEnviarCurriculo = document.getElementById('botaoSubmeter');
 botaoEnviarCurriculo.addEventListener('click', evitarDefault);

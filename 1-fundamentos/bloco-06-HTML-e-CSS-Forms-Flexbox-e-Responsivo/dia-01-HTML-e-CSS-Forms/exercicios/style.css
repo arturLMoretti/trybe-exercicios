@@ -49,9 +49,18 @@ textarea {
     width: 100%;
 }
 
-.campos-formulario select {
+textarea {
+    display: block;
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
 }
+
+fieldset {
+    margin-top: 25px;
+    overflow: hidden;
+}
+
 
 .formulario input {
     font-size: 15px;
@@ -64,4 +73,14 @@ textarea {
     display: block;
     font-size: 20px;
     padding: 10px 25px;
+    margin: 10px auto;
+}
+
+#Estado {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.casa-apto {
+    margin: 10px 200px;
 }
