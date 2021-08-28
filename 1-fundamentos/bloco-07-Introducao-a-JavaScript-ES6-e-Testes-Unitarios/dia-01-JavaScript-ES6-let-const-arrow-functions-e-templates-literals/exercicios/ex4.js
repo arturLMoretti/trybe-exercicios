@@ -11,12 +11,15 @@ const substituiX = (frase, novoX) => {
 
 function montaFrase(frase, skills) {
     skills.sort();
-    console.log(skills)
+    console.log(`${frase} Minhas cinco principais habilidades são:`)
+    for (let i = 0; i < skills.length; i +=1) {
+      console.log(` - ${skills[i]}`);
+    }
 }
 
 const frase = "Tryber x aqui!";
 const novoX = "Bebeto";
-console.log (substituiX(frase, novoX))
+const fraseFormatada = substituiX(frase, novoX);
 
 skills = ['HTML', 'JavaScript', 'CSS', 'ES6', 'Testes Unitários', 'Bootstrap']
-montaFrase(frase, skills)
+montaFrase(fraseFormatada, skills)
