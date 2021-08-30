@@ -4,14 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Exemplo localStorage e sessionStorage</title>
 </head>
 <body>
-<h1>As pessoas devem ter o poder de alterar:</h1>
-<h2>    Cor de fundo da tela;</h2>
-<h2>    Cor do texto;</h2>
-<h2>Tamanho da fonte;</h2>
-<h2>Espaçamento entre as linhas do texto;</h2>
-<h2>Tipo da fonte ( Font family ).</h2>
+
+<div class = "acessibilidade">
+    <h1>Escolha a melhor configuração do site:</h1>
+    <div class="opcoes">
+        <label class = "opt" for="corBG">Cor de fundo
+            <select name="corBG" id="corBG">
+                <option value="red">Vermelho</option>
+                <option value="blue">Azul</option>
+                <option value="black">Preto</option>
+                <option value="white">Branco</option>
+            </select>
+        </label>
+        <label class = "opt" for="corTexto">Cor do texto
+            <select name="corTexto" id="corTexto">
+                <option value="red">Vermelho</option>
+                <option value="blue">Azul</option>
+                <option value="black">Preto</option>
+                <option value="white">Branco</option>
+            </select>
+        </label>
+        <label class = "opt" for = "tamFonte">Tamanho da fonte
+            <select name="tamFonte" id="tamFonte">
+                <option value="8pt">8 pt</option>
+                <option value="12pt">12 pt</option>
+                <option value="14pt">14 pt</option>
+                <option value="16pt">16 pt</option>
+            </select>
+        </label>
+        <label class = "opt" for="espLinhas">Espaçamento entre as linhas
+            <select name="espLinhas" id="espLinhas">
+                <option value="1.6">1.0</option>
+                <option value="2.4">1.5</option>
+                <option value="3.2">2.0</option>
+            </select>
+        </label>
+        <label class = "opt" for="tipoFonte">Tipo da fonte
+            <select name="tipoFonte" id="tipoFonte">
+                <option value="Arial">Arial</option>
+                <option value="Times">Times</option>
+            </select>
+        </label>
+    </div>     
+</div>
+
+<div class="principal">
+    <header class="titulo">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolorem praesentium quo assumenda modi.</h1>
+    </header>
+    
+    <div class="central">
+        <main>
+            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id sapiente incidunt fuga eos nostrum facilis delectus! Asperiores, hic quidem </h1>    
+        
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab facilis fugit doloribus enim, harum culpa aut voluptate! Dolorem earum aliquid libero eligendi illum fugit, quisquam veniam temporibus labore eum dolor quas eveniet. Cumque totam velit nostrum, dolor doloremque iure sed architecto sequi quis dolore et.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi quaerat unde non excepturi nam sapiente nemo incidunt? Nihil consequatur qui maxime cumque beatae ullam eligendi doloremque unde nesciunt autem dolor, nisi animi voluptas quidem aspernatur quisquam vero. Aut aliquam quos neque porro illum ad explicabo repudiandae enim obcaecati voluptatum, officia id ullam ducimus quo, placeat minus iure expedita corporis facere, quam minima! Tenetur soluta nesciunt quia hic molestiae, sequi ipsum ratione corrupti aperiam, cum inventore dolorem, quod commodi vero! Illum in nisi incidunt a tempore, beatae error. Sapiente minus doloribus tempora, nam cumque et fugiat error ducimus. Facilis, autem.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam perferendis ab, hic rerum commodi et officia obcaecati distinctio similique? Amet labore nam facere animi voluptatum natus, fugiat nobis perferendis repellendus.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error at provident necessitatibus quaerat! Architecto, vel. Tenetur repudiandae perspiciatis voluptatibus beatae, fugiat harum, ducimus incidunt quidem expedita tempore repellendus nam pariatur veniam, veritatis error architecto? Ex modi consequuntur voluptatem beatae officia facilis labore voluptas excepturi debitis, natus laboriosam, repellendus et aperiam a nulla voluptatibus itaque tenetur! Iste ullam dolorum officia, nisi assumenda omnis suscipit molestiae ratione sunt libero et placeat, eum blanditiis commodi, reprehenderit totam accusamus? Nobis consequatur assumenda rem distinctio.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, exercitationem.
+            </p>
+        </main>
+        
+        <aside>
+            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, ipsum?</h1>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quae.</li>
+            </ul>
+        </aside>
+    </div>
+    
+    <footer> Lorem ipsum dolor sit amet. &copy;</footer>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
