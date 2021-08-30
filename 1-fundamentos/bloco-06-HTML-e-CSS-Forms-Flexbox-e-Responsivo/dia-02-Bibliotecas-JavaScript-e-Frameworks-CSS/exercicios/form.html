@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criando um formulário de currículo</title>
+    <link rel="stylesheet" href="Semantic-UI-CSS-master/semantic.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,15 +14,15 @@
     </header>
 
     <div class = "formulario">
-        <form action="" method="get">
+        <form class="ui form" action="" method="get">
             <fieldset>
                 <h2>Dados Pessoais</h2>
-                <div class="campos-formulario">
+                <div class="field">
                     <label for="nome">Nome Completo:</label>
                     <input type="text" name="nome" maxlength="40"   id="nome" required Placeholder = "Ex: João da Silva">
                 </div>
 
-                <div class="campos-formulario">
+                <div class="field">
                     <label for="email">E-mail:</label>
                     <input type="text" name="email" maxlength="50"   id="email" required Placeholder = "Ex: jaozind@malandragem.com">
                 </div>
@@ -43,7 +44,7 @@
 
                 <div class="campos-formulario">
                     <label for="Estado">Estado:</label>
-                    <select name="estado" id="Estado"></select>
+                    <select class="ui dropdown" name="estado" id="Estado"></select>
                 </div>
                 
                 <div class="campos-formulario casa-apto">
@@ -85,11 +86,41 @@
                     <input type="text" name="data" id="data" required placeholder="DD/MM/AAAA">
                 </div>
             </fieldset>
-            <button id = 'botaoSubmeter' type="submit">Enviar currículo</button>
+
+            <div id="botaoSubmeter" class=" Huge ui animated button" tabindex="0">
+                <div class="visible content">Gerar currículo</div>
+                <div class="hidden content">
+                  <i class="down arrow icon"></i>
+                </div>
+              </div>
         </form>
     </div>
-    
+    <form class="ui form">
+        <div class="field">
+          <label>Empty</label>
+          <input name="empty" type="text">
+        </div>
+        <div class="field">
+          <label>Dropdown</label>
+          <select class="ui dropdown" name="dropdown">
+            <option value="">Select</option>
+            <option value="male">Choice 1</option>
+            <option value="female">Choice 2</option>
+          </select>
+        </div>
+        <div class="inline field">
+          <div class="ui checkbox">
+            <input type="checkbox" name="checkbox">
+            <label>Checkbox</label>
+          </div>
+        </div>
+        <div class="ui submit button">Submit</div>
+        <div class="ui error message"></div>
+      </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
+    <script src="formValidation.js"></script>
 </body>
 </html>

@@ -203,3 +203,5 @@ let estados =  [
 
     const casaRadio = document.getElementById('casa');
   const AptoRadio = document.getElementById('apto');
+
+  
