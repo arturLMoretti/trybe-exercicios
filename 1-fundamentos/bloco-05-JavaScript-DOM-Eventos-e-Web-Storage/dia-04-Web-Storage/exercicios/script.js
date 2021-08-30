@@ -1,0 +1,1 @@
+const corBG = document.getElementById('corBG');
