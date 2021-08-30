@@ -76,7 +76,7 @@ const retornaValorComPosicao = (objeto, posicao) => {
   return valores[posicao];
 }
 
-console.log(retornaValorComPosicao(lesson1, 0));
+//console.log(retornaValorComPosicao(lesson1, 0));
 
 // Exercício 8
 
@@ -92,4 +92,27 @@ const verificaPar = (objeto, chave, valor) => {
     }
 }
 
-console.log(verificaPar(lesson1, 'materia', 'Matemática'));
+//console.log(verificaPar(lesson1, 'materia', 'Matemática'));
+
+// Bônus 
+const contaEstudantes = (objeto, professor) => {
+  const qtdeTurmas = retornaTamanhoObjeto(objeto);
+  const report = {
+    professor: professor,
+    aulas: '',
+    estudantes: 0
+  }
+  const vetorAulas = [];
+  let estudantes = 0;
+  for (let i in objeto) {
+    const aulasProfessor = verificaPar(objeto[i], 'professor', professor);
+    if (aulasProfessor === true) {
+        vetorAulas.push(objeto[i].materia)
+        estudantes = estudantes + objeto[i].numeroEstudantes;
+    }
+  }
+  report.aulas = vetorAulas;
+  report.estudantes = estudantes;
+  return report;
+}
+console.log(contaEstudantes(allLessons, 'Carlos'));
