@@ -11,3 +11,14 @@ function myRemove(arr, item) {
 }
 
 // implemente seus testes aqui
+// 1
+assert.strictEqual(typeof myRemove([1, 2, 3, 4], 3),typeof [1, 2, 4]);
+
+// Esta implementação não dá certo - usar deepEqual
+// assert.strictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 4], 'Deve-se esperar um array sem o 3');
+
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 4]);
+// 2 
+assert.notStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 3, 4]);
+
+// 3 
