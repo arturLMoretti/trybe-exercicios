@@ -21,3 +21,11 @@ const newEmployees = () => {
     return employees;
   };
 
+const checkFunction = (a,b) => a===b ? 'Parabéns você ganhou' : `Resultado: ${b}! Tente novamente`;
+
+const result = (num, func) => {
+    const rnd = Math.floor(Math.random() * 4) + 1;
+    console.log(func(num, rnd));
+}
+
+result(4,checkFunction)
