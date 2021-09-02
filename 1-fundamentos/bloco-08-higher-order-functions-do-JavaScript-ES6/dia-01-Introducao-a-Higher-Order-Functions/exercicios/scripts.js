@@ -29,3 +29,25 @@ const result = (num, func) => {
 }
 
 result(4,checkFunction)
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const gradeFunction = (rigth, student) => {
+    let grade = 0; 
+
+    for (let i = 0; i < rigth.length; i +=1) {
+        if (student[i] === 'N.A') {
+            grade += 0;
+        } else if (student[i] === rigth[i]) {
+            grade +=1; 
+        } else {
+            grade -=0.5;
+        }
+    }
+    return grade;
+}
+
+const gradeGiver = (right, student, func) => console.log(`Sua nota é ${func(right, student)}`);;
+
+gradeGiver(RIGHT_ANSWERS, STUDENT_ANSWERS, gradeFunction)
