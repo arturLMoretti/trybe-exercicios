@@ -46,18 +46,26 @@
 #### [ ] CSS Flexbox - Parte 2
 #### [ ] CSS Responsivo - Mobile First
 
-### Bloco 07 - Introdução à JavaScript ES6 e Testes Unitários
+### Bloco 07 - Introdução à JavaScript ES6 e Testes Unitários :heavy_check_mark:
 #### [X] JavaScript ES6 - let, const, arrow functions e templates literais
 #### [X] JavaScript ES6 - Objects
-#### [ ] Testes unitários em JavaScript
+#### [X] Testes unitários em JavaScript
 
 ### Bloco 08 - Higher Order Functions do JavaScript ES6
-#### [ ] JavaScript ES6 - Introdução a Higher Order Functions
+#### [X] JavaScript ES6 - Introdução a Higher Order Functions
 #### [ ] JavaScript ES6 - Higher Order Functions - forEach, find, some, every ,sort
 #### [ ] JavaScript ES6 - Higher Order Functions - map e filter
 #### [ ] JavaScript ES6 - Higher Order Functions - reduce
 #### [ ] JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
 
+### Bloco 09 - JavaScript Assíncronos e Promisses
+#### [ ] JavaScript Assíncrono e Callbacks
+#### [ ] JavaScript Promises
+
+### Bloco 10 - Testes automatizados com Jest
+#### [ ] Primeiros passos no Jest
+#### [ ] Jest - Testes Assíncronos
+#### [ ] Jest - Simulando comportamentos
 
 ## 02 - Desenvolvimento Front-End :hourglass_flowing_sand: 
 
