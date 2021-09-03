@@ -69,15 +69,26 @@ const mage = {
 
       mage.healthPoints = mageInitialHP - dragonDamage;
       warrior.healthPoints = warriorInitialHP - dragonDamage;
+    }, 
+    turnUpdate(battleMembers) {
+      this.warriorTurn();
+      this.mageTurn();
+      this.dragonTurn();
+
+
+      console.table(battleMembers)
     }
-  };
+   };
 
   const battleMembers = { mage, warrior, dragon };
   
-  console.table(mage);
-  console.table(warrior);
-  console.table(dragon);
-  gameActions.dragonTurn()
-  console.table(mage);
-  console.table(warrior);
-  console.table(dragon);
+  // console.table(mage);
+  // console.table(warrior);
+  // console.table(dragon);
+  // gameActions.dragonTurn()
+  // console.table(mage);
+  // console.table(warrior);
+  // console.table(dragon);
+  
+  console.table(battleMembers);
+  gameActions.turnUpdate(battleMembers);
