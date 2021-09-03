@@ -49,7 +49,7 @@
 ### Bloco 07 - Introdução à JavaScript ES6 e Testes Unitários :heavy_check_mark:
 #### [X] JavaScript ES6 - let, const, arrow functions e templates literais
 #### [X] JavaScript ES6 - Objects
-#### [X] Testes unitários em JavaScript
+#### [ ] Testes unitários em JavaScript
 
 ### Bloco 08 - Higher Order Functions do JavaScript ES6
 #### [X] JavaScript ES6 - Introdução a Higher Order Functions
