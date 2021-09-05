@@ -27,14 +27,14 @@ const findDivisibleBy3And5 = (number) => {
 console.log(numbers.find(findDivisibleBy3And5));
 
 
-const names = ['João', 'Irene', 'Fernando', 'Maria'];
+const names2 = ['João', 'Irene', 'Fernando', 'Maria'];
 
 const findNameWithFiveLetters = (name) => {
   // Adicione seu código aqui:
   return (name.length === 5);
 }
 
-console.log(names.find(findNameWithFiveLetters));
+console.log(names2.find(findNameWithFiveLetters));
 
 const musicas = [
     { id: '31031685', title: 'Partita in C moll BWV 997' },
@@ -50,12 +50,47 @@ const musicas = [
   console.log(musicas.find(findMusic))
 
 
-  // Array.some e Array.every
+// Array.some e Array.every
 
-  const names = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
+const names3 = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
 
 const hasName = (arr, name) => {
   //Adicione seu código aqui
+  return (arr.some((elemento)=> elemento === name ));
 }
 
-console.log(hasName(names, 'Ana'));
+console.log(hasName(names3, 'Ana'));
+
+const people = [
+  { name: 'Mateus', age: 18 },
+  { name: 'José', age: 17 },
+  { name: 'Ana', age: 23 },
+  { name: 'Cláudia', age: 20 },
+  { name: 'Bruna', age: 19 },
+];
+
+const verifyAges = (arr, minimumAge) => {
+  //Adicione seu código aqui
+  return arr.every((element) => element.age >= minimumAge)
+}
+
+console.log(verifyAges(people, 18));
+
+// Array.sort
+
+const people2 = [
+  { name: 'Mateus', age: 18 },
+  { name: 'José', age: 16 },
+  { name: 'Ana', age: 23 },
+  { name: 'Cláudia', age: 20 },
+  { name: 'Bruna', age: 19 },
+];
+
+// Adicione se código aqui
+people2.sort((a,b) => a.age - b.age)
+
+console.log(people2);
+
+people2.sort((a,b) => b.age - a.age)
+
+console.log(people2);
