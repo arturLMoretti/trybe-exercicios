@@ -7,44 +7,46 @@
     <title>Criando um formulário de currículo</title>
     <link rel="stylesheet" href="Semantic-UI-CSS-master/semantic.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="DatePickerX/dist/css/DatePickerX.min.css">
+    <link rel="stylesheet" href="Just-validate/dist/css/justValidateTooltip.min.css">
+
 </head>
 <body>
     <header class="cabecalho">
         <h1>Formulário de currículo</h1>
     </header>
 
-    <div class = "formulario">
-        <form class="ui form" action="" method="get">
+        <form class="ui form js-form form" action="#" method="get">
             <fieldset>
                 <h2>Dados Pessoais</h2>
                 <div class="field">
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" name="nome" maxlength="40"   id="nome" required Placeholder = "Ex: João da Silva">
-                </div>
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" class="form__input form-control" placeholder="Enter your name" autocomplete="off" data-validate-field="name" name="name" id="name">
+                  </div>
 
                 <div class="field">
                     <label for="email">E-mail:</label>
-                    <input type="text" name="email" maxlength="50"   id="email" required Placeholder = "Ex: jaozind@malandragem.com">
+                    <input data-validate-field="email" type="text" name="email" maxlength="50"   id="email" required Placeholder = "Ex: jaozind@malandragem.com">
                 </div>
 
                 <div class="campos-formulario">
                     <label for="cpf">CPF:</label>
-                    <input type="text" name="cpf" maxlength="11"   id="cpf" required Placeholder = "Ex: 12345678998">
+                    <input data-validate-field="cpf" type="text" name="cpf" id="cpf" required Placeholder = "Ex: 12345678998">
                 </div>
 
                 <div class="campos-formulario">
                     <label for="endereco">Endereço:</label>
-                    <input type="text" name="end" maxlength="200"   id="endereco" required Placeholder = "Ex: Avenida do baile, 420">
+                    <input data-validate-field="endereco" type="text" name="endereco" id="endereco" required Placeholder = "Ex: Avenida do baile, 420">
                 </div>
 
                 <div class="campos-formulario">
                     <label for="cidade">Cidade:</label>
-                    <input type="text" name="cidade" maxlength="28"   id="cidade" required Placeholder = "Ex: Rio Grande do Norte do Sul">
+                    <input data-validate-field="cidade" type="text" name="cidade" maxlength="28" id="cidade" required Placeholder = "Ex: Rio Grande do Norte do Sul">
                 </div>
 
                 <div class="campos-formulario">
                     <label for="Estado">Estado:</label>
-                    <select class="ui dropdown" name="estado" id="Estado"></select>
+                    <select data-validate-field="estado" class="ui dropdown" name="estado" id="Estado"></select>
                 </div>
                 
                 <div class="campos-formulario casa-apto">
@@ -87,40 +89,14 @@
                 </div>
             </fieldset>
 
-            <div id="botaoSubmeter" class=" Huge ui animated button" tabindex="0">
-                <div class="visible content">Gerar currículo</div>
-                <div class="hidden content">
-                  <i class="down arrow icon"></i>
-                </div>
-              </div>
+            <button class="form__btn btn btn-primary">Gerar Currículo</button>
         </form>
-    </div>
-    <form class="ui form">
-        <div class="field">
-          <label>Empty</label>
-          <input name="empty" type="text">
-        </div>
-        <div class="field">
-          <label>Dropdown</label>
-          <select class="ui dropdown" name="dropdown">
-            <option value="">Select</option>
-            <option value="male">Choice 1</option>
-            <option value="female">Choice 2</option>
-          </select>
-        </div>
-        <div class="inline field">
-          <div class="ui checkbox">
-            <input type="checkbox" name="checkbox">
-            <label>Checkbox</label>
-          </div>
-        </div>
-        <div class="ui submit button">Submit</div>
-        <div class="ui error message"></div>
-      </form>
-    </div>
+    
+    <script src="Just-validate/dist/js/just-validate.min.js"></script>
+    <script src="DatePickerX/dist/js/DatePickerX.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
-    <script src="formValidation.js"></script>
+    
 </body>
 </html>
