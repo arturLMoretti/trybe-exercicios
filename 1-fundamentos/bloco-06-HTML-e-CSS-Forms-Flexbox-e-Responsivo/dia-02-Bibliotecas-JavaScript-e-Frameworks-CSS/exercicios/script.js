@@ -1,3 +1,6 @@
+function selectValidation(name, value) {
+    return !(name === value);
+}
 new window.JustValidate('.form', {
   rules: {
       name: {
@@ -25,6 +28,10 @@ new window.JustValidate('.form', {
         maxLength: 28,
       },
       estado: {
+        required: true,
+      },
+      submitHandler: selectValidation,
+      moroEm: {
         required: true,
       },
       checkbox: {
