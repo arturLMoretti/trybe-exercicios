@@ -41,7 +41,7 @@ function criaDiv() {
   const cargoAtualDescricaoValue = document.getElementById('descricao-cargo');
   const dataInicioValor = document.getElementById('data');
 
-  const div = document.createElement('div');
+  const div = document.getElementById('curriculoFormatado');
   const Nome = document.createElement('p');
   const email = document.createElement('p');
   const cpf = document.createElement('p');
@@ -61,11 +61,10 @@ function criaDiv() {
   cpf.innerText = 'CPF: ' + cpfValor.value;
   endereco.innerText = 'Endereço: ' + enderecoValor.value + ', ' + casaApto +', ' + cidadeValor.value + ', ' + estadoValor.value;
   resumoCarreira.innerText = 'Resumo da carreira: ' + resumoValor.value;
-  cargoAtualNome.innerText = 'Cargo atual: ' + resumoValor.value;
+  cargoAtualNome.innerText = 'Cargo atual: ' + cargoValue.value;
   cargoAtualInicio.innerText = 'Data de início: ' + dataInicioValor.value;
   cargoAtualDescricao.innerText = 'Descrição do cargo atual: ' + cargoAtualDescricaoValue.value;
 
-  document.body.appendChild(div);
   div.appendChild(Nome);
   div.appendChild(email);
   div.appendChild(cpf);
@@ -203,3 +202,33 @@ let estados =  [
 
     const casaRadio = document.getElementById('casa');
   const AptoRadio = document.getElementById('apto');
+
+
+  const botaoLimpar = document.getElementById('botaoLimpar');
+  botaoLimpar.addEventListener('click', (evt)=> {
+    evt.preventDefault();
+    const currForm = document.getElementById('curriculoFormatado');
+    if (currForm) currForm.innerText ='';
+
+    const nomeValor = document.getElementById('nome');
+    const emailValor = document.getElementById('email')
+    const cpfValor = document.getElementById('cpf')
+    const enderecoValor = document.getElementById('endereco')
+    const cidadeValor = document.getElementById('cidade')
+    const estadoValor = document.getElementById('Estado')
+    const resumoValor = document.getElementById('resumo-curriculo');
+    const cargoValue = document.getElementById('cargo');
+    const cargoAtualDescricaoValue = document.getElementById('descricao-cargo');
+    const dataInicioValor = document.getElementById('data');
+
+    if (nomeValor) nomeValor.value ='';
+    if (emailValor) emailValor.value ='';
+    if (cpfValor) cpfValor.value ='';
+    if (enderecoValor) enderecoValor.value ='';
+    if (cidadeValor) cidadeValor.value ='';
+    if (estadoValor) estadoValor.value ='';
+    if (resumoValor) resumoValor.value ='';
+    if (cargoValue) cargoValue.value ='';
+    if (cargoAtualDescricaoValue) cargoAtualDescricaoValue.value ='';
+    if (dataInicioValor) dataInicioValor.value ='';
+  });
