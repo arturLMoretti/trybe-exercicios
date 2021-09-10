@@ -5,48 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criando um formulário de currículo</title>
-    <link rel="stylesheet" href="Semantic-UI-CSS-master/semantic.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="DatePickerX/dist/css/DatePickerX.min.css">
-    <link rel="stylesheet" href="Just-validate/dist/css/justValidateTooltip.min.css">
-
 </head>
 <body>
     <header class="cabecalho">
         <h1>Formulário de currículo</h1>
     </header>
 
-        <form class="ui form js-form form" action="#" method="get">
+    <div class = "formulario">
+        <form action="" method="get">
             <fieldset>
                 <h2>Dados Pessoais</h2>
-                <div class="field">
-                    <label for="name">Nome Completo:</label>
-                    <input type="text" class="form__input form-control" placeholder="Enter your name" autocomplete="off" data-validate-field="name" name="name" id="name">
-                  </div>
+                <div class="campos-formulario">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" name="nome" maxlength="40"   id="nome" required Placeholder = "Ex: João da Silva">
+                </div>
 
-                <div class="field">
+                <div class="campos-formulario">
                     <label for="email">E-mail:</label>
-                    <input data-validate-field="email" type="text" name="email" maxlength="50"   id="email" required Placeholder = "Ex: jaozind@malandragem.com">
+                    <input type="text" name="email" maxlength="50"   id="email" required Placeholder = "Ex: jaozind@malandragem.com">
                 </div>
 
                 <div class="campos-formulario">
                     <label for="cpf">CPF:</label>
-                    <input data-validate-field="cpf" type="text" name="cpf" id="cpf" required Placeholder = "Ex: 12345678998">
+                    <input type="text" name="cpf" maxlength="11"   id="cpf" required Placeholder = "Ex: 12345678998">
                 </div>
 
                 <div class="campos-formulario">
                     <label for="endereco">Endereço:</label>
-                    <input data-validate-field="endereco" type="text" name="endereco" id="endereco" required Placeholder = "Ex: Avenida do baile, 420">
+                    <input type="text" name="end" maxlength="200"   id="endereco" required Placeholder = "Ex: Avenida do baile, 420">
                 </div>
 
                 <div class="campos-formulario">
                     <label for="cidade">Cidade:</label>
-                    <input data-validate-field="cidade" type="text" name="cidade" maxlength="28" id="cidade" required Placeholder = "Ex: Rio Grande do Norte do Sul">
+                    <input type="text" name="cidade" maxlength="28"   id="cidade" required Placeholder = "Ex: Rio Grande do Norte do Sul">
                 </div>
 
                 <div class="campos-formulario">
                     <label for="Estado">Estado:</label>
-                    <select data-validate-field="estado" class="ui dropdown" name="estado" id="Estado"></select>
+                    <select name="estado" id="Estado"></select>
                 </div>
                 
                 <div class="campos-formulario casa-apto">
@@ -54,9 +51,9 @@
                       <tbody>
                         <tr>
                           <td>Moro em:</td>
-                          <td><input data-validate-field="moroEm" type="radio" name="moroEm" id="casa" value="Casa"></td>
+                          <td><input type="radio" name="moro-em" id="casa" value="Casa"></td>
                           <td>Casa</td>
-                          <td><input data-validate-field="moroEm" type="radio" name="moroEm"id="apto" value="Apartamento"></td>
+                          <td><input type="radio" name="moro-em"id="apto" value="Apartamento"></td>
                           <td>Apartamento</td>
                   
                         </tr>
@@ -88,15 +85,11 @@
                     <input type="text" name="data" id="data" required placeholder="DD/MM/AAAA">
                 </div>
             </fieldset>
-
-            <button class="form__btn btn btn-primary">Gerar Currículo</button>
+            <button id = 'botaoSubmeter' type="submit">Enviar currículo</button>
         </form>
+    </div>
     
-    <script src="Just-validate/dist/js/just-validate.min.js"></script>
-    <script src="DatePickerX/dist/js/DatePickerX.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
-    <script src="jquery-3.6.0.min.js"></script>
+    </div>
     <script src="script.js"></script>
-    
 </body>
 </html>
