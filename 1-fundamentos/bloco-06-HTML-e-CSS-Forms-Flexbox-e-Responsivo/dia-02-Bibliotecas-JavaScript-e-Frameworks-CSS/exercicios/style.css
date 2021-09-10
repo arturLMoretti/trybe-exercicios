@@ -1,86 +1,86 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing:content-box ;
-}
-
-body {
-    background-color: rgb(236, 237, 238);
-    text-align: center;
-}
-
-header {
-    text-align: center;
-    border: solid 1px rgb(58, 57, 57);
-    border-radius: 20px;
-    color: rgb(58, 58, 58);
-    background-color: rgb(255, 255, 231);
-    width: 70%;
-    margin: 15px auto;
-    text-decoration: underline;
-    font-size: 30px;
-}
-
-h2 {
-  margin-bottom: 15px;
-}
-
-div {
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box ;
+  }
+  
+  body {
+      background-color: rgb(236, 237, 238);
+      text-align: center;
+  }
+  
+  header {
+      text-align: center;
+      border: solid 1px rgb(58, 57, 57);
+      border-radius: 20px;
+      color: rgb(58, 58, 58);
+      background-color: rgb(255, 255, 231);
+      width: 70%;
+      margin: 15px auto;
+      text-decoration: underline;
+      font-size: 30px;
+  }
+  
+  h2 {
     margin-bottom: 15px;
-}
-
-textarea {
-    display: block;
-    text-align: left;
-    width: 100%;
-}
-
-.formulario {
-    text-align: center;
-    width: 60%;
-    margin: 15px auto;
-    font-size: 20px;
-}
-
-.campos-formulario {
-    display: block;
-    text-align: right;
-    margin: 15px auto;
-    width: 100%;
-}
-
-textarea {
-    display: block;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
-fieldset {
-    margin-top: 25px;
-    overflow: hidden;
-}
-
-
-.formulario input {
-    font-size: 15px;
-    margin-right: 40px;
-    width: 60%;
-    height: 20px;
-}
-
-#botaoSubmeter {
-    display: block;
-    font-size: 20px;
-    padding: 10px 25px;
-    margin: 10px auto;
-}
-
-#Estado {
-    display: inline-block;
-    margin-right: 40px;
-}
-
-.casa-apto {
-    margin: 10px 200px;
-}
+  }
+  
+  div {
+      margin-bottom: 15px;
+  }
+  
+  textarea {
+      display: block;
+      text-align: left;
+      width: 100%;
+  }
+  
+  .formulario {
+      text-align: center;
+      width: 60%;
+      margin: 15px auto;
+      font-size: 20px;
+  }
+  
+  .campos-formulario {
+      display: block;
+      text-align: right;
+      margin: 15px auto;
+      width: 100%;
+  }
+  
+  textarea {
+      display: block;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+  }
+  
+  fieldset {
+      margin-top: 25px;
+      overflow: hidden;
+  }
+  
+  
+  .formulario input {
+      font-size: 15px;
+      margin-right: 40px;
+      width: 60%;
+      height: 20px;
+  }
+  
+  #botaoSubmeter, #botaoLimpar {
+      display: inline-block;
+      font-size: 20px;
+      padding: 10px 25px;
+      margin: 10px auto;
+  }
+  
+  #Estado {
+      display: inline-block;
+      margin-right: 40px;
+  }
+  
+  .casa-apto {
+      margin: 10px 200px;
+  }
