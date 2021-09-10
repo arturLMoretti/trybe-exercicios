@@ -1,33 +1,13 @@
-// Inspirado em https://stackoverflow.com/questions/6177975/how-to-validate-date-with-format-mm-dd-yyyy-in-javascript
-function isValidDate(date) {
-  let temp = date.split('/');
-  let dia = temp[0];
-  let mes = temp[1];
-  let ano = temp[2];
-  let mensagem = true;
-  if (temp.length < 3) {
-    mensagem = 'Insira uma data no formato DD/MM/AAAA'
-  }
-  if ((dia <= 0) || (dia > 31)) {
-    mensagem = 'Insira um dia válido!'
-  }
-  if ((mes <= 0) || (mes > 12)) {
-    if (mensagem === true) {
-      mensagem += 'Insira um mês válido!'
-    } else {
-      mensagem += '\nInsira um mês válido!'
-    }
-    
-  }
-  if ((ano <= 0) || (ano > 2021)) {
-    if (mensagem === true) {
-      mensagem += 'Insira um mês válido!'
-    } else {
-      mensagem += '\nInsira um mês válido!'
-    }
-  }
-  return mensagem
+// Valida data 
+import './node_modules/pikaday/pikaday.js'
+
+const data = new Pikaday({
+  field: document.getElementById('data'),
+  format: 'DD MM YYYY',
+  onSelect: function() {
+    console.log(this.getMoment().format('Do MMMM YYYY'));
 }
+});
 
 function criaDiv() {
   const nomeValor = document.getElementById('nome');
@@ -78,80 +58,7 @@ function criaDiv() {
 }
 function evitarDefault(evt) {
   evt.preventDefault();
-  const nomeVazioAlerta = document.getElementById('nome');
-  const emailVazioAlerta = document.getElementById('email')
-  const cpfVazioAlerta = document.getElementById('cpf')
-  const enderecoVazioAlerta = document.getElementById('endereco')
-  const cidadeVazioAlerta = document.getElementById('cidade')
-  const EstadoVazioAlerta = document.getElementById('Estado')
-  const casaRadio = document.getElementById('casa');
-  const AptoRadio = document.getElementById('apto');
-  const resumoVazioAlerta = document.getElementById('resumo-curriculo');
-  const cargoVazioAlerta = document.getElementById('cargo');
-  const descCargoVazioAlerta = document.getElementById('descricao-cargo');
-  const dataInicioVazioAlerta = document.getElementById('data');
-
-  let erros = 0;
-  if (nomeVazioAlerta.value === '') {
-    alert('Insira seu nome completo!');
-    erros = erros +1;
-  }
-
-  if (emailVazioAlerta.value === '') {
-    alert('Insira seu e-mail!');
-    erros = erros +1;
-  }
-
-  if (cpfVazioAlerta.value === '') {
-    alert('Insira seu CPF!');
-    erros = erros +1;
-  }
-
-  if (enderecoVazioAlerta.value === '') {
-    alert('Insira seu endereço!');
-    erros = erros +1;
-  }
-
-  if (cidadeVazioAlerta.value === '') {
-    alert('Insira a cidade aonde mora!');
-    erros = erros +1;
-  }
-
-  if (EstadoVazioAlerta.value === 'Selecione') {
-    alert('Insira o estado aonde mora!');
-    erros = erros +1;
-  }
-
-  if ((casaRadio.checked === false) && (AptoRadio.checked == false)) {
-    alert("Selecione 'Casa' caso more em uma casa ou 'Apartamento' caso more em apartamento")
-    erros = erros +1;
-  }
-
-  if (resumoVazioAlerta.value === '') {
-    alert('Insira o resumo da sua carreira!');
-    erros = erros +1;
-  }
-
-  if (cargoVazioAlerta.value === '') {
-    alert('Insira seu cargo atual!');
-    erros = erros +1;
-  }
-
-  if (descCargoVazioAlerta.value === '') {
-    alert('Insira uma descrição para seu cargo atual!');
-    erros = erros +1;
-  }
-
-  if (dataInicioVazioAlerta.value === '') {
-    alert('Insira a data de início do seu emprego atual!');
-    erros = erros +1;
-  } else {
-    let msg = isValidDate(dataInicioVazioAlerta.value);
-    if (msg !== true) {
-      alert('Insira uma data válida \n' + msg );
-      erros = erros +1;
-    }
-  }
+  
   if (erros ===0) {
     criaDiv();
   } 
