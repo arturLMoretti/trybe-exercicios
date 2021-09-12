@@ -5,8 +5,24 @@ function getChange(payable, paid) {
     let remaining = paid - payable;
   
     // escreva seu código aqui...
-    
-  
+    if (paid < payable) {
+      throw `Error: paid value is not enough`;
+    } else if (paid === payable) {
+      return change;
+    } else {
+      coins.map(coin => {
+        const coinsNeeded = [];
+        const NcoinsNeeded = (remaining - (remaining % coin))/ coin;
+        
+        
+        for (let i = 0; i < NcoinsNeeded; i += 1) {
+          coinsNeeded.push(coin);
+        }
+        
+        change.push(...coinsNeeded)
+        remaining = remaining - NcoinsNeeded*coin;
+      });
+    }
     return change;
   }
 
