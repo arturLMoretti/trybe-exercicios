@@ -51,7 +51,7 @@
 #### [X] JavaScript ES6 - Objects
 #### [X] Testes unitários em JavaScript
 
-### Bloco 08 - Higher Order Functions do JavaScript ES6
+### Bloco 08 - Higher Order Functions do JavaScript ES6 :heavy_check_mark:
 #### [X] JavaScript ES6 - Introdução a Higher Order Functions
 #### [X] JavaScript ES6 - Higher Order Functions - forEach, find, some, every ,sort
 #### [X] JavaScript ES6 - Higher Order Functions - map e filter
