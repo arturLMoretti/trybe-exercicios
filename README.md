@@ -56,7 +56,7 @@
 #### [X] JavaScript ES6 - Higher Order Functions - forEach, find, some, every ,sort
 #### [X] JavaScript ES6 - Higher Order Functions - map e filter
 #### [X] JavaScript ES6 - Higher Order Functions - reduce
-#### [ ] JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
+#### [X] JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
 
 ### Bloco 09 - JavaScript Assíncronos e Promisses
 #### [ ] JavaScript Assíncrono e Callbacks
