@@ -10,10 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.1",
+    "cpf-cnpj-validator": "^1.0.3",
     "just-validate": "^1.5.0",
     "moment": "^2.29.1",
     "pikaday": "^1.8.2"
   },
-  "devDependencies": {},
   "description": ""
 }

@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./node_modules/pikaday/css/pikaday.css" />
     <link rel="stylesheet" href="style.css" />
+  <script src="./customValidation.js" type="module"></script>
   </head>
   <body>
     <header class="cabecalho">
@@ -21,196 +22,213 @@
       <fieldset class="container">
         <h2>Dados Pessoais</h2>
         <div class="row">
-            <div class="col">
-                <div class="form-group">
-                    <label class="form-label" for="nome">Nome Completo:</label>
-                    <input
-                      class="form-control"
-                      type="text"
-                      name="nome"
-                      maxlength="40"
-                      id="nome"
-                      required
-                      placeholder="Ex: João da Silva"
-                    />
-                    <div class="valid-feedback">OK!</div>
-                    <div class="invalid-feedback">Nos informe seu Nome Completo!</div>
-                  </div>
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label" for="nome">Nome Completo:</label>
+              <input
+                class="form-control"
+                type="text"
+                name="nome"
+                maxlength="50"
+                id="nome"
+                required
+                placeholder="Ex: João da Silva"
+              />
+              <div class="valid-feedback ">OK!</div>
+              <div class="invalid-feedback name-invalid">Nos informe seu Nome Completo!</div>
             </div>
+          </div>
 
-            <div class="col">
-                <div class="form-group">
-                    <label class="form-label" for="email">E-mail:</label>
-                    <input
-                      class="form-control"
-                      type="text"
-                      name="email"
-                      maxlength="50"
-                      id="email"
-                      required
-                      placeholder="Ex: jaozind@malandragem.com"
-                    />
-                    <div class="valid-feedback">OK!</div>
-                    <div class="invalid-feedback">Nos informe seu E-mail!</div>
-                  </div>
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label" for="email">E-mail:</label>
+              <input
+                class="form-control"
+                type="text"
+                name="email"
+                maxlength="60"
+                id="email"
+                required
+                placeholder="Ex: joao.silva@gmail.com"
+              />
+              <div class="valid-feedback">OK!</div>
+              <div class="invalid-feedback email-invalid">Nos informe seu E-mail!</div>
             </div>
+          </div>
+
+          <div class="col">
+            <label class="form-label" for="cpf">CPF:</label>
+            <input
+              class="form-control"
+              type="text"
+              name="cpf"
+              maxlength="11"
+              id="cpf"
+              required
+              placeholder="Ex: 12345678998"
+            />
+            <div class="valid-feedback">OK!</div>
+            <div class="invalid-feedback cpf-invalid">Nos informe seu CPF!</div>
+          </div>
         </div>
 
-        <div class="col-md-4">
-          <label class="form-label" for="cpf">CPF:</label>
-          <input
-            class="form-control"
-            type="text"
-            name="cpf"
-            maxlength="11"
-            id="cpf"
-            required
-            placeholder="Ex: 12345678998"
-          />
-          <div class="valid-feedback">OK!</div>
-          <div class="invalid-feedback">Nos informe seu CPF!</div>
-        </div>
+        <div class="row">
+          <div class="col-md-4 col">
+            <label for="endereco">Endereço:</label>
+            <input
+              class="form-control"
+              type="text"
+              name="end"
+              maxlength="210"
+              id="endereco"
+              required
+              placeholder="Ex: Avenida do baile, 420"
+            />
+            <div class="valid-feedback">OK!</div>
+            <div class="invalid-feedback endereco-ivalido">Nos informe seu Endereço!</div>
+          </div>
 
-        <div class="col-md-4">
-          <label for="endereco">Endereço:</label>
-          <input
-            class="form-control"
-            type="text"
-            name="end"
-            maxlength="200"
-            id="endereco"
-            required
-            placeholder="Ex: Avenida do baile, 420"
-          />
-          <div class="valid-feedback">OK!</div>
-          <div class="invalid-feedback">Nos informe seu Endereço!</div>
-        </div>
+          <div class="col-md-4 col">
+            <label for="cidade">Cidade:</label>
+            <input
+              class="form-control"
+              type="text"
+              name="cidade"
+              maxlength="30"
+              id="cidade"
+              required
+              placeholder="Ex: Rio Grande do Norte do Sul"
+            />
+            <div class="valid-feedback">OK!</div>
+            <div class="invalid-feedback cidade-invalido">Nos informe sua Cidade!</div>
+          </div>
 
-        <div class="col-md-4">
-          <label for="cidade">Cidade:</label>
-          <input
-            class="form-control"
-            type="text"
-            name="cidade"
-            maxlength="28"
-            id="cidade"
-            required
-            placeholder="Ex: Rio Grande do Norte do Sul"
-          />
-          <div class="valid-feedback">OK!</div>
-          <div class="invalid-feedback">Nos informe sua Cidade!</div>
-        </div>
+          <div class="col-md-4 col">
+            <div class="row">
+              <div class="col">
+                <label for="Estado">Estado:</label>
+                <select
+                  class="custom-select"
+                  required
+                  aria-label="select example"
+                  name="estado"
+                  id="Estado"
+                >
+                  <option value="">Escolha um estado</option>
+                </select>
+                <div class="valid-feedback">OK!</div>
+                <div class="invalid-feedback estado-invalido">Escolha o Estado onde mora!</div>
+              </div>
 
-        <div class="col-md-4">
-          <label for="Estado">Estado:</label>
-          <select
-            class="form-select"
-            required
-            aria-label="select example"
-            name="estado"
-            id="Estado"
-          >
-            <option value="">Escolha um estado</option>
-          </select>
-          <div class="valid-feedback">OK!</div>
-          <div class="invalid-feedback">Escolha o Estado onde mora!</div>
-        </div>
+              <div class="col">
+                <label for="">Moro em:
+                  <div class="form-check col-md-4 custom-control custom-radio">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="validationFormCheck2"
+                    name="radio-stacked"
+                    required
+                  />
+                  <label class="form-check-label" for="casa">Casa</label>
+                </div>
 
-        <div class="form-check col-md-4">
-          <input
-            type="radio"
-            class="form-check-input"
-            id="validationFormCheck2"
-            name="radio-stacked"
-            required
-          />
-          <label class="form-check-label" for="casa">Casa</label>
-        </div>
-
-        <div class="form-check col-md-4">
-          <input
-            type="radio"
-            class="form-check-input"
-            id="validationFormCheck3"
-            name="radio-stacked"
-            required
-          />
-          <label class="form-check-label" for="validationFormCheck3"
-            >Apartamento</label
-          >
-          <div class="valid-feedback">OK!</div>
-          <div class="invalid-feedback">Escolha Casa ou Apartamento!</div>
+                <div class="form-check col-md-4 custom-control custom-radio">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="validationFormCheck3"
+                    name="radio-stacked"
+                    required
+                  />
+                  <label class="form-check-label" for="validationFormCheck3"
+                    >Apartamento</label
+                  >
+                  <div class="valid-feedback">OK!</div>
+                  <div class="invalid-feedback">Escolha Casa ou Apartamento!</div>
+                </div>
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </fieldset>
 
       <fieldset>
         <h2>Experiência Profissional</h2>
-        <div class="col-md-4">
-          <label class="form-label" for="resumo-curriculo"
-            >Resumo do Currículo</label
-          >
-          <textarea
-            class="form-control"
-            name="resCurriculo"
-            id="resumo-curriculo"
-            cols="30"
-            rows="10"
-            maxlength="1000"
-            required
-            placeholder="Ex: Auxiliar de assuntos auxiliares por três anos"
-          ></textarea>
-          <div class="valid-feedback">OK!</div>
-          <div class="invalid-feedback">Preencha o Resumo do Currículo!</div>
-        </div>
+        
+        <div class="row">
+            <div class="col-md-4 col">
+              <label class="form-label" for="resumo-curriculo"
+                >Resumo do Currículo</label
+              >
+              <textarea
+                class="form-control"
+                name="resCurriculo"
+                id="resumo-curriculo"
+                cols="30"
+                rows="10"
+                maxlength="1000"
+                required
+                placeholder="Ex: Auxiliar de assuntos auxiliares por três anos"
+              ></textarea>
+              <div class="valid-feedback">OK!</div>
+              <div class="invalid-feedback">Preencha o Resumo do Currículo!</div>
+            </div>
 
-        <div class="col-md-4">
-          <label class="form-label" for="cargo">Cargo atual</label>
-          <input
-            class="form-control"
-            type="text"
-            name="cargo"
-            id="cargo"
-            required
-            placeholder="Ex: Auxiliar de assuntos auxiliares"
-            maxlength="40"
-          />
-          <div class="valid-feedback">OK!</div>
-          <div class="invalid-feedback">Preencha seu Cargo Atual!</div>
-        </div>
+          <div class="col">
+            <div class="col-md-4">
+              <label class="form-label" for="cargo">Cargo atual</label>
+              <input
+                class="form-control"
+                type="text"
+                name="cargo"
+                id="cargo"
+                required
+                placeholder="Ex: Auxiliar de assuntos auxiliares"
+                maxlength="40"
+              />
+              <div class="valid-feedback">OK!</div>
+              <div class="invalid-feedback">Preencha seu Cargo Atual!</div>
+            </div>
+    
+            <div class="col-md-4">
+              <label class="form-label" for="descricao-cargo"
+                >Descrição do cargo</label
+              >
+              <textarea
+                class="form-control"
+                name="desc-cargo"
+                id="descricao-cargo"
+                cols="30"
+                rows="10"
+                placeholder="Ex: Auxiliar o setor de assuntos auxiliares com serviços auxiliares"
+                required
+                maxlength="500"
+              ></textarea>
+              <div class="valid-feedback">OK!</div>
+              <div class="invalid-feedback">Preencha a Descrição do Cargo!</div>
+            </div>
+    
+            <div class="col-md-4">
+              <label class="form-label" for="data">Data de Início:</label>
+              <input
+                class="form-control"
+                type="text"
+                name="data"
+                id="data"
+                required
+                placeholder="DD/MM/AAAA"
+              />
+              <div class="valid-feedback">OK!</div>
+              <div class="invalid-feedback">
+                Nos informe a data que começou no emprego atual!
+              </div>
+            </div>
 
-        <div class="col-md-4">
-          <label class="form-label" for="descricao-cargo"
-            >Descrição do cargo</label
-          >
-          <textarea
-            class="form-control"
-            name="desc-cargo"
-            id="descricao-cargo"
-            cols="30"
-            rows="10"
-            placeholder="Ex: Auxiliar o setor de assuntos auxiliares com serviços auxiliares"
-            required
-            maxlength="500"
-          ></textarea>
-          <div class="valid-feedback">OK!</div>
-          <div class="invalid-feedback">Preencha a Descrição do Cargo!</div>
-        </div>
-
-        <div class="col-md-4">
-          <label class="form-label" for="data">Data de Início:</label>
-          <input
-            class="form-control"
-            type="text"
-            name="data"
-            id="data"
-            required
-            placeholder="DD/MM/AAAA"
-          />
-          <div class="valid-feedback">OK!</div>
-          <div class="invalid-feedback">
-            Nos informe a data que começou no emprego atual!
           </div>
         </div>
+
       </fieldset>
       <button class="btn btn-primary" id="botaoSubmeter" type="submit">
         Enviar currículo
@@ -218,7 +236,5 @@
       <button class="btn btn-warning" id="botaoLimpar">Limpar currículo</button>
     </form>
     <div id="curriculoFormatado"></div>
-    <script src="validaCust.js"></script>
-    <script src="bloqueiaValidaBS.js"></script>
   </body>
 </html>
