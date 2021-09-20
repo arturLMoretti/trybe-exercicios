@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./node_modules/pikaday/css/pikaday.css" />
     <link rel="stylesheet" href="style.css" />
+  <script src="./node_modules/pikaday/pikaday.js"></script>
   <script src="./customValidation.js" type="module"></script>
   </head>
   <body>
@@ -173,7 +174,7 @@
                 placeholder="Ex: Auxiliar de assuntos auxiliares por três anos"
               ></textarea>
               <div class="valid-feedback">OK!</div>
-              <div class="invalid-feedback">Preencha o Resumo do Currículo!</div>
+              <div class="invalid-feedback abstract-invalido">Preencha o Resumo do Currículo!</div>
             </div>
 
           <div class="col">
@@ -189,7 +190,7 @@
                 maxlength="40"
               />
               <div class="valid-feedback">OK!</div>
-              <div class="invalid-feedback">Preencha seu Cargo Atual!</div>
+              <div class="invalid-feedback cargo-invalido">Preencha seu Cargo Atual!</div>
             </div>
     
             <div class="col-md-4">
@@ -207,13 +208,13 @@
                 maxlength="500"
               ></textarea>
               <div class="valid-feedback">OK!</div>
-              <div class="invalid-feedback">Preencha a Descrição do Cargo!</div>
+              <div class="invalid-feedback descricao-cargo-ivalida">Preencha a Descrição do Cargo!</div>
             </div>
     
             <div class="col-md-4">
               <label class="form-label" for="data">Data de Início:</label>
               <input
-                class="form-control"
+                class="form-control beginning-date"
                 type="text"
                 name="data"
                 id="data"

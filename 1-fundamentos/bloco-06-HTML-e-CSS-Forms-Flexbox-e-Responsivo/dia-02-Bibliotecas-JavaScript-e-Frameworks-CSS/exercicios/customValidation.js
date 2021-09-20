@@ -1,6 +1,5 @@
 import { cpf } from './node_modules/cpf-cnpj-validator/dist/cpf-cnpj-validator.es.js';
 
-
 function loadStates() {
     let estados =  ['Acre',
         'Alagoas',
@@ -174,8 +173,93 @@ function liveInValidation() {
   const casaApto = document.querySelectorAll('.form-check-input');
  
   casaApto.forEach((event) => event.addEventListener('click', (event) => {
-      
+    if (event.target.value === 'on') event.target.classList.add('is-valid')
   })); 
+}
+
+function abstractValidation() {
+  const abstract = document.querySelector('#resumo-curriculo');
+  const invalidFeedbackMessage = document.querySelector('.abstract-invalido');
+  const maxLength = 1000;
+
+  abstract.addEventListener('keyup', (event) => {
+    const numCar = event.target.value.length;
+    event.target.classList.add('is-valid')
+    event.target.classList.remove('is-invalid');
+    if (numCar > maxLength) {
+      invalidFeedbackMessage.innerHTML = `Apenas ${maxLength} caracteres são permitidos!`;
+      event.target.classList.add('is-invalid');
+      event.target.classList.remove('is-valid')
+    }
+
+    if (numCar === 0) {
+      event.target.classList.remove('is-valid')
+      event.target.classList.add('is-invalid');
+    }
+  });
+}
+
+function ocupationValidation() {
+  const ocupation = document.querySelector('#cargo');
+  const invalidFeedbackMessage = document.querySelector('.cargo-invalido');
+  const maxLength = 40;
+
+  ocupation.addEventListener('keyup', (event) => {
+    const numCar = event.target.value.length;
+    event.target.classList.add('is-valid')
+    event.target.classList.remove('is-invalid');
+    if (numCar > maxLength) {
+      invalidFeedbackMessage.innerHTML = `Apenas ${maxLength} caracteres são permitidos!`;
+      event.target.classList.add('is-invalid');
+      event.target.classList.remove('is-valid')
+    }
+
+    if (numCar === 0) {
+      event.target.classList.remove('is-valid')
+      event.target.classList.add('is-invalid');
+    }
+  });
+}
+
+function jobDescriptionValidation() {
+  const ocupation = document.querySelector('#descricao-cargo');
+  const invalidFeedbackMessage = document.querySelector('.descricao-cargo-invalida');
+  const maxLength = 500;
+
+  ocupation.addEventListener('keyup', (event) => {
+    const numCar = event.target.value.length;
+    event.target.classList.add('is-valid')
+    event.target.classList.remove('is-invalid');
+    if (numCar > maxLength) {
+      invalidFeedbackMessage.innerHTML = `Apenas ${maxLength} caracteres são permitidos!`;
+      event.target.classList.add('is-invalid');
+      event.target.classList.remove('is-valid')
+    }
+
+    if (numCar === 0) {
+      event.target.classList.remove('is-valid')
+      event.target.classList.add('is-invalid');
+    }
+  });
+}
+
+function beginingDateValidation() {
+    const picker = new Pikaday({
+        field: document.getElementById('data'),
+        format: 'DD/MM/YYYY',
+        onSelect: function() {
+          const dateField = document.querySelector('.beginning-date');
+          dateField.addEventListener('change', (event) => {
+            event.classList.add('is-valid');
+          })
+        },
+        i18n: {
+            months        : ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+            weekdays      : ['Doming','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
+            weekdaysShort : ['Dom','Seg','Ter','Qua','Qui','Sex','Sab']
+        }
+    });
+
 }
 window.onload = () => {
   loadStates();
@@ -186,8 +270,8 @@ window.onload = () => {
   cityValidation();
   stateValidation();
   liveInValidation();
-//   abstractValidation();
-//   ocupationValidation();
-//   jobDescriptionValidation();
-//   beginingDateValidation();
+  abstractValidation();
+  ocupationValidation();
+  jobDescriptionValidation();
+  beginingDateValidation();
 };
