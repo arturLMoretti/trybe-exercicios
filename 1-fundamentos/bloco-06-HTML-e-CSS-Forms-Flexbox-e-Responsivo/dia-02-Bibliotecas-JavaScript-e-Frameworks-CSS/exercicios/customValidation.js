@@ -159,9 +159,7 @@ function stateValidation() {
   const invalidFeedbackMessage = document.querySelector('.estado-invalido');
   
   estadosSelect.addEventListener('change', (event) => {
-    console.log(!estadosSelect.value);
     if (!estadosSelect.value) {
-      console.log(estadosSelect.value);
       invalidFeedbackMessage.innerHTML = `Selecione um Estado!`;
       event.target.classList.remove('is-valid')
       event.target.classList.add('is-invalid')
@@ -171,6 +169,14 @@ function stateValidation() {
     }
   })
 }
+
+function liveInValidation() {
+  const casaApto = document.querySelectorAll('.form-check-input');
+ 
+  casaApto.forEach((event) => event.addEventListener('click', (event) => {
+      
+  })); 
+}
 window.onload = () => {
   loadStates();
   nameValidation();
@@ -179,7 +185,7 @@ window.onload = () => {
   addressValidation();
   cityValidation();
   stateValidation();
-//   liveInValidation();
+  liveInValidation();
 //   abstractValidation();
 //   ocupationValidation();
 //   jobDescriptionValidation();
