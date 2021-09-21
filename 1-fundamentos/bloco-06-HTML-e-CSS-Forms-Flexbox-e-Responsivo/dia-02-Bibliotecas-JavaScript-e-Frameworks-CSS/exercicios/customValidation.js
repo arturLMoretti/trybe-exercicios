@@ -265,6 +265,7 @@ function beginingDateValidation() {
 
 function criaDiv(evt) {
     evt.preventDefault();
+    evt.stopPropagation();
     const nomeValor = document.getElementById('nome');
     const emailValor = document.getElementById('email')
     const cpfValor = document.getElementById('cpf')
@@ -317,6 +318,37 @@ function criaDiv(evt) {
     let botaoEnviarCurriculo = document.getElementById('botaoSubmeter');
     botaoEnviarCurriculo.addEventListener('click', criaDiv);
   }
+
+function botaoLimpar() {
+    const botaoLimpar = document.getElementById('botaoLimpar');
+    botaoLimpar.addEventListener('click', (evt)=> {
+      evt.preventDefault();
+      const currForm = document.getElementById('curriculoFormatado');
+      if (currForm) currForm.innerText ='';
+  
+      const nomeValor = document.getElementById('nome');
+      const emailValor = document.getElementById('email')
+      const cpfValor = document.getElementById('cpf')
+      const enderecoValor = document.getElementById('endereco')
+      const cidadeValor = document.getElementById('cidade')
+      const estadoValor = document.getElementById('Estado')
+      const resumoValor = document.getElementById('resumo-curriculo');
+      const cargoValue = document.getElementById('cargo');
+      const cargoAtualDescricaoValue = document.getElementById('descricao-cargo');
+      const dataInicioValor = document.getElementById('data');
+  
+      if (nomeValor) nomeValor.value ='';
+      if (emailValor) emailValor.value ='';
+      if (cpfValor) cpfValor.value ='';
+      if (enderecoValor) enderecoValor.value ='';
+      if (cidadeValor) cidadeValor.value ='';
+      if (estadoValor) estadoValor.value ='';
+      if (resumoValor) resumoValor.value ='';
+      if (cargoValue) cargoValue.value ='';
+      if (cargoAtualDescricaoValue) cargoAtualDescricaoValue.value ='';
+      if (dataInicioValor) dataInicioValor.value ='';
+    });
+}
 window.onload = () => {
   loadStates();
   nameValidation();
@@ -331,4 +363,5 @@ window.onload = () => {
   jobDescriptionValidation();
   beginingDateValidation();
   botaoSubmeter();
+  botaoLimpar();
 };
