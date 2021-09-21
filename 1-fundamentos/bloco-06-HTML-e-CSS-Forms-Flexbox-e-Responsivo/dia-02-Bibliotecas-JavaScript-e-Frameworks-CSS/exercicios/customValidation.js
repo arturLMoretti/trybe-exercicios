@@ -257,10 +257,66 @@ function beginingDateValidation() {
             months        : ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
             weekdays      : ['Doming','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
             weekdaysShort : ['Dom','Seg','Ter','Qua','Qui','Sex','Sab']
-        }
+        },
+        showDaysInNextAndPreviousMonths: true,
+        enableSelectionDaysInNextAndPreviousMonths: true,
     });
-
 }
+
+function criaDiv(evt) {
+    evt.preventDefault();
+    const nomeValor = document.getElementById('nome');
+    const emailValor = document.getElementById('email')
+    const cpfValor = document.getElementById('cpf')
+    const enderecoValor = document.getElementById('endereco')
+    const cidadeValor = document.getElementById('cidade')
+    const estadoValor = document.getElementById('Estado')
+    const resumoValor = document.getElementById('resumo-curriculo');
+    const cargoValue = document.getElementById('cargo');
+    const cargoAtualDescricaoValue = document.getElementById('descricao-cargo');
+    const dataInicioValor = document.getElementById('data');
+  
+    const div = document.createElement('div');
+    const Nome = document.createElement('p');
+    const email = document.createElement('p');
+    const cpf = document.createElement('p');
+    const endereco = document.createElement('p');
+  
+    // Conforme https://stackoverflow.com/questions/15839169/how-to-get-value-of-selected-radio-button
+    const casaApto = document.querySelector('input[name="moro-em"]:checked').value;
+    
+    const resumoCarreira = document.createElement('p');
+    const cargoAtual = document.createElement('div');
+    const cargoAtualNome = document.createElement('p');
+    const cargoAtualInicio = document.createElement('p');
+    const cargoAtualDescricao = document.createElement('p');
+  
+    Nome.innerText = 'Nome: ' + nomeValor.value;
+    email.innerText = 'E-mail: ' + emailValor.value;
+    cpf.innerText = 'CPF: ' + cpfValor.value;
+    endereco.innerText = 'Endereço: ' + enderecoValor.value + ', ' + casaApto +', ' + cidadeValor.value + ', ' + estadoValor.value;
+    resumoCarreira.innerText = 'Resumo da carreira: ' + resumoValor.value;
+    cargoAtualNome.innerText = 'Cargo atual: ' + cargoValue.value;
+    cargoAtualInicio.innerText = 'Data de início: ' + dataInicioValor.value;
+    cargoAtualDescricao.innerText = 'Descrição do cargo atual: ' + cargoAtualDescricaoValue.value;
+  
+    document.body.appendChild(div);
+    div.appendChild(Nome);
+    div.appendChild(email);
+    div.appendChild(cpf);
+    div.appendChild(endereco);  
+    div.appendChild(resumoCarreira);
+    div.appendChild(cargoAtual);
+    cargoAtual.appendChild(cargoAtualNome);
+    cargoAtual.appendChild(cargoAtualInicio);
+    cargoAtual.appendChild(cargoAtualDescricao);
+  
+  }
+
+  function botaoSubmeter() {
+    let botaoEnviarCurriculo = document.getElementById('botaoSubmeter');
+    botaoEnviarCurriculo.addEventListener('click', criaDiv);
+  }
 window.onload = () => {
   loadStates();
   nameValidation();
@@ -274,4 +330,5 @@ window.onload = () => {
   ocupationValidation();
   jobDescriptionValidation();
   beginingDateValidation();
+  botaoSubmeter();
 };
