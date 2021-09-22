@@ -1,6 +1,6 @@
 # **Trybe - Exercícios** 
 
- Este depositório contém exercícios desenvolvidos por [Artur Lemes Moretti](https://www.linkedin.com/in/arturlemesmoretti/) enquanto estudava na [Trybe](https://www.betrybe.com/)
+ Este repositório contém exercícios desenvolvidos por [Artur Lemes Moretti](https://www.linkedin.com/in/arturlemesmoretti/) enquanto estudava na [Trybe](https://www.betrybe.com/)
 
 >"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."
 
@@ -59,8 +59,8 @@
 #### [X] JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
 
 ### Bloco 09 - JavaScript Assíncronos e Promisses
-#### [ ] JavaScript Assíncrono e Callbacks
-#### [ ] JavaScript Promises
+#### [X] JavaScript Assíncrono e Callbacks
+#### [X] JavaScript Promises
 
 ### Bloco 10 - Testes automatizados com Jest
 #### [ ] Primeiros passos no Jest
