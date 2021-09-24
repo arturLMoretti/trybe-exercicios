@@ -59,8 +59,8 @@
 #### [X] JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
 
 ### Bloco 09 - JavaScript Assíncronos e Promisses
-#### [ ] JavaScript Assíncrono e Callbacks
-#### [ ] JavaScript Promises
+#### [X] JavaScript Assíncrono e Callbacks
+#### [X] JavaScript Promises
 
 ### Bloco 10 - Testes automatizados com Jest
 #### [ ] Primeiros passos no Jest
