@@ -1,7 +1,6 @@
 import './App.css';
 import React from 'react';
 
-
 class Text extends React.Component {
   render(){
     const textJSX = 'Hello, JSX';
@@ -22,9 +21,9 @@ function Horas () {
 
 function App() {
   
-  return (<>
-  <Text></Text>
-  <Horas></Horas>
-    </>); 
+  return (<div className="App-header">
+            <Text></Text>
+            <Horas></Horas>
+          </div>); 
 }
 export default App;
