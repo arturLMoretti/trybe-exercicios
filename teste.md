@@ -56,7 +56,7 @@ Callbacks são poderosas ferramentas para executar ações que acontecem de mane
 
 Como exemplo, preste atenção no código a seguir:
 
-'''javascript
+```javascript
 
 const sum = (a,b) => a + b;
 
@@ -68,7 +68,7 @@ callback(a,b);
 
 module.exports = {sum, addAsync}
 
-'''
+```
 
 Na função `addAsync` os números `a` e `b` serão passados para a função `callback`. Caso o `callback` for `sum`, será retornado a soma `a + b`.
 
