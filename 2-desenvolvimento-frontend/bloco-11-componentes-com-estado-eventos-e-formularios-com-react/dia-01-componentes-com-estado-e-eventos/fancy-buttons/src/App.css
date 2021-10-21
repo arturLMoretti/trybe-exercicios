@@ -3,7 +3,6 @@
 }
 
 .botao {
-  padding: 10px;
   text-align: center;
   margin: 20px;
   background-color: red;
@@ -18,4 +17,8 @@
   cursor: pointer;
   background-color:darkred;
   box-shadow: 3px 3px black;
+}
+
+div, p {
+  width: 100%;
 }

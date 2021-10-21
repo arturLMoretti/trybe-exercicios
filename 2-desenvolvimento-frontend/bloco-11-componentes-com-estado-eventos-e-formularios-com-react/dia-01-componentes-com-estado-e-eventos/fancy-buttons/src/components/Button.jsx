@@ -8,21 +8,24 @@ class Button extends React.Component {
             cliquesBotao: 0,
         }
     }
-    botao() {
+    botao({target}) {
         this.setState((estadoAnterior, _props) => ({
             cliquesBotao: estadoAnterior.cliquesBotao + 1,
         }))
+        if (this.state.cliquesBotao % 2 === 0) {
+            target.style.backgroundColor = 'green';
+        } else {
+            target.style.backgroundColor = 'red';
+        }
+        
+
     }
     render() {
         const {text} = this.props;
         return (
         <div onClick={this.botao} className="botao" >
-            <div>
-            {text}
-            </div>
-            <p>
-            nº cliques: {this.state.cliquesBotao}
-            </p>
+            {`${text}:
+            nº cliques: ${this.state.cliquesBotao}`}  
         </div>)
     }
 }
