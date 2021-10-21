@@ -30,7 +30,8 @@ class App extends React.Component {
       <div className="App">
         <h1> Orders recently created </h1>
          {productList.map((product) => (
-           <Order 
+           <Order
+           key={product.id}
            order={product}
            />
          ))}
