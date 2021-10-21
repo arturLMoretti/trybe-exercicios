@@ -2,12 +2,7 @@ import React from 'react';
 
 class Image extends React.Component {
   render() {
-    return(
-      <p>
-        {this.props.src} <br />
-        {this.props.alt}
-      </p>
-    );
+    return <img src={this.props.src} alt={this.props.alt} />;
   }
 }
 
