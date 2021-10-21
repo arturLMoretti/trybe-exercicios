@@ -4,17 +4,25 @@ class Button extends React.Component {
     constructor() {
         super();
         this.botao = this.botao.bind(this);
+        this.state = {
+            cliquesBotao: 0,
+        }
     }
-    botao({target}) {
-        console.log(target.innerText ===
-            'Botão 1'?
-            'Clicou Botão 1' : ( target.innerText === 'Botão 2' ?
-            'Clicou Botão 2' : 'Clicou botão 3'));
+    botao() {
+        this.setState((estadoAnterior, _props) => ({
+            cliquesBotao: estadoAnterior.cliquesBotao + 1,
+        }))
     }
     render() {
         const {text} = this.props;
-        return (<div onClick={this.botao} className="botao" >
+        return (
+        <div onClick={this.botao} className="botao" >
+            <div>
             {text}
+            </div>
+            <p>
+            nº cliques: {this.state.cliquesBotao}
+            </p>
         </div>)
     }
 }
