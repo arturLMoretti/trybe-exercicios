@@ -25,7 +25,7 @@ class Button extends React.Component {
         return (
         <div onClick={this.botao} className="botao" >
             {`${text}:
-            nº cliques: ${this.state.cliquesBotao}`}  
+            cliques: ${this.state.cliquesBotao}`}  
         </div>)
     }
 }
