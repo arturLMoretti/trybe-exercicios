@@ -1,0 +1,24 @@
+.flex {
+  display:flex;
+}
+
+.botao {
+  text-align: center;
+  margin: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  font-size: 80px;
+  box-shadow: 2px 2px black;
+
+}
+
+.botao:hover {
+  cursor: pointer;
+  background-color:darkred;
+  box-shadow: 3px 3px black;
+}
+
+div, p {
+  width: 100%;
+}
