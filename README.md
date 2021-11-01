@@ -6,7 +6,7 @@
 
 >O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## 01 - Introdução ao Desenvolvimento Web :hourglass_flowing_sand: 
+## 01 - Introdução ao Desenvolvimento :heavy_check_mark:
 ### Bloco 01 - Unix e bash :heavy_check_mark:	
 #### [X] 1.1 - Apresentação da Trybe 	
 #### [X] 1.2 - Apresentação da Trybe 	
@@ -58,16 +58,27 @@
 #### [X] JavaScript ES6 - Higher Order Functions - reduce
 #### [X] JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
 
-### Bloco 09 - JavaScript Assíncronos e Promisses
+### Bloco 09 - JavaScript Assíncronos e Promisses :heavy_check_mark:
 #### [X] JavaScript Assíncrono e Callbacks
 #### [X] JavaScript Promises
 
-### Bloco 10 - Testes automatizados com Jest
-#### [ ] Primeiros passos no Jest
-#### [ ] Jest - Testes Assíncronos
-#### [ ] Jest - Simulando comportamentos
+### Bloco 10 - Testes automatizados com Jest :heavy_check_mark:
+#### [X] Primeiros passos no Jest
+#### [X] Jest - Testes Assíncronos
+#### [X] Jest - Simulando comportamentos
 
-## 02 - Desenvolvimento Front-End :hourglass_flowing_sand: 
+## 02 - Desenvolvimento Front-End
+### Bloco 10 - Introdução a React :heavy_check_mark:
+#### [X] 'Hello, world!" no React!
+#### [X] Componentes React
+
+### Bloco 11 - Componentes com Estado, Eventos e Formulários com React
+#### [ ] Componentes com estado e eventos
+#### [ ] Formulários no React
+
+### Bloco 12 - Ciclo de Vida de Componentes e React Router
+#### [ ] Ciclo de vida de Componentes
+#### [ ] React Router
 
 
 ## 03 - Desenvolvimento Back-End :hourglass_flowing_sand: 
