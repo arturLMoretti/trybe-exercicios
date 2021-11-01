@@ -1,0 +1,23 @@
+{
+  "name": "trybe-exercicios",
+  "version": "1.0.0",
+  "description": "Este depositório contém exercícios desenvolvidos por [Artur Lemes Moretti](https://www.linkedin.com/in/arturlemesmoretti/) enquanto estudava na [Trybe](https://www.betrybe.com/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arturLMoretti/trybe-exercicios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arturLMoretti/trybe-exercicios/issues"
+  },
+  "homepage": "https://github.com/arturLMoretti/trybe-exercicios#readme",
+  "devDependencies": {
+    "jest": "^27.2.1"
+  }
+}
