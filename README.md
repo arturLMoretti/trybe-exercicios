@@ -73,12 +73,12 @@
 #### [X] Componentes React
 
 ### Bloco 11 - Componentes com Estado, Eventos e Formulários com React
-#### [ ] Componentes com estado e eventos
-#### [ ] Formulários no React
+#### [X] Componentes com estado e eventos
+#### [X] Formulários no React
 
 ### Bloco 12 - Ciclo de Vida de Componentes e React Router
-#### [ ] Ciclo de vida de Componentes
-#### [ ] React Router
+#### [X] Ciclo de vida de Componentes
+#### [X] React Router
 
 
 ## 03 - Desenvolvimento Back-End :hourglass_flowing_sand: 
