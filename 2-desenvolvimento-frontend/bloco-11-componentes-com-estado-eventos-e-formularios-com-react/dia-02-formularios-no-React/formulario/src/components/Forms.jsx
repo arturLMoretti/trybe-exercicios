@@ -34,16 +34,26 @@ class Form extends Component {
             {'Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)'}
               <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.genericHandleChange} />
           </label>
+          <label htmlFor="idade">Idade:
           <input
             type="number"
             name="idade"
             onChange={this.genericHandleChange}
           />
+          </label>
+          <label htmlFor="vaiComparecer">Vai Comparecer?
           <input
             type="checkbox"
             name="vaiComparecer"
             onChange={this.genericHandleChange}
           />
+          </label>
+          <label htmlFor="">Insira seu formuário de inscrição:
+          <input 
+            type="file"
+            name="enviarFormulario" 
+          />
+          </label>
         </form>
       </div>
     );
