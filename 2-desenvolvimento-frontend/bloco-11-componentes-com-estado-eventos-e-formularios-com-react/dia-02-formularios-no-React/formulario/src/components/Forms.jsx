@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
-
+import EscolhaValor from './EscolhaValor'
+import EstadoFavorito from './EstadoFavorito'
 class Form extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.genericHandleChange = this.genericHandleChange.bind(this);
     this.state = {
       escolhaValor:'',
       estadoFavorito: '',
       idade:'',
-      vaiComparecer:''
+      vaiComparecer:'',
+      formularioComErros: true,
     };
   }
 
@@ -18,27 +20,33 @@ class Form extends Component {
     this.setState({
       [name]:value,
     })
+    if (!value) {
+      this.setState({
+        formularioComErros: true,
+      })
+    } else {
+      this.setState({
+        formularioComErros: false,
+      })
+    }
   }
 
   render() {
     return (
       <div>
         <h1>Estados e React - Tecnologia fantástica ou reagindo a regionalismos?</h1>
-        <select onClick={this.genericHandleChange} name="escolhaValor">
-          <option value="valor1">Valor 1</option>
-          <option value="valor2">Valor 2</option>
-          <option value="valor3">Valor 3</option>
-        </select>
         <form className="form">
-          <label>
-            {'Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)'}
-              <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.genericHandleChange} />
-          </label>
-          <label htmlFor="idade">Idade:
+        <EscolhaValor 
+        setEscolhaValor={this.genericHandleChange}
+        />
+        <EstadoFavorito 
+        setEstadoFavorito={this.genericHandleChange}
+        />
+        <label htmlFor="idade">Idade:
           <input
-            type="number"
-            name="idade"
-            onChange={this.genericHandleChange}
+          type="number"
+          name="idade"
+          onChange={this.genericHandleChange}
           />
           </label>
           <label htmlFor="vaiComparecer">Vai Comparecer?
