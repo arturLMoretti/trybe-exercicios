@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "sua_senha_aqui",
-    "database": "orm_example",
+    "database": "meu_banco",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

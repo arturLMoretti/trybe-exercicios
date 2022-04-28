@@ -1,5 +1,5 @@
 {
-  "name": "app-with-sequelize",
+  "name": "sequelize_do_zero",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,13 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.0.0",
-    "express": "^4.17.3",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.17.0",
-    "sequelize-cli": "^6.4.1"
+    "sequelize": "^6.17.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "express": "^4.17.3",
+    "sequelize-cli": "^6.4.1"
   }
 }
